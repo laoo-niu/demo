@@ -1,13 +1,13 @@
 // 获取数据并绑定
 ;
-var api_url = 'http://www.colvin.cn/wfp'
+var api_url = 'http://localhost/wfp'
 	, request_url = {
 		'r' : api_url + '/rural/{m}/{q}', // 乡村
 		's' : api_url + '/staplefood/{m}/{q}', // 主食
 		'v' : api_url + '/vegetables/{m}{q}', // 蔬菜
 		'f' : api_url + '/fruit/{m}/{q}', // 水果
 		'a' : api_url + '/activity/{m}/{q}' // 活动
-	}
+	};
 var hash = window.location.hash||'#n', q = window.location.search;
 if (q && q.length > 1)
 {
@@ -18,7 +18,7 @@ if (q && q.length > 1)
 }
 hash = hash.substring(1);
 
-var commentItem = '<li class="comment"><article id="comment-1"><div class="comment-author"><img class="avatar" src="{avatar}" alt="头像"/><span class="commenter">{commenter}</span><span class="comment-date">{date}</span></div><div class="comment-content"><p>{content}</p></div></article></li>'
+var commentItem = '<li class="comment"><article id="comment-1"><div class="comment-author"><img class="avatar" src="{avatar}" alt="头像"/><span class="commenter">{commenter}</span><span class="comment-date">{date}</span></div><div class="comment-content"><p>{content}</p></div></article></li>';
 
 $.restGet(request_url[hash], {'m': 'init', 'q': q}, function(data){
 	console.log(data);
