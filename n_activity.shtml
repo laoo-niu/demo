@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>活动</title>
+<!--#include file="head_include.html" -->
+</head>
+<body>
+<div id="bodypat">
+<section id="container">
+<!-- BEGIN HEADER -->
+<!--#include file="header.html" -->
+<!-- END HEADER -->
+
+<!-- BEGIN CONTENT -->
+<section id="content" class="clearfix">
+<!-- Title -->
+<div style="text-align:left;color:white;"><h3>活动</h3></div>
+
+<!-- BEGIN LEFT CONTENT -->
+<section id="bloglist-left" class="clearfix">
+
+	<div class="bloglist">
+        <a href="n_activityDetail.html" title="Article 1">
+        <div class="bl-posttitle"><span class="bl-title">活动1的标题</span></div>
+        <img class="bloglist-img" src="images/placeholder/list_blank.png" alt="Article 1" />
+        <span class="tile-date redtxt"><span class="date">09</span><span class="month">七月</span></span>
+        <span class="tile-cat red">活动1</span>
+        </a>
+    </div>
+    <div class="bloglist">
+        <a href="n_activityDetail.html" title="Article 2">
+        <div class="bl-posttitle"><span class="bl-title">活动2的标题</span></div>
+        <img class="bloglist-img" src="images/placeholder/list_blank.png" alt="Article 2" />
+        <span class="tile-date greentxt"><span class="date">06</span><span class="month">七月</span></span>
+        <span class="tile-cat lime">活动2</span>
+        </a>
+    </div>
+    <div class="bloglist">
+        <a href="n_activityDetail.html" title="Article 3">
+        <div class="bl-posttitle"><span class="bl-title">活动3的标题</span></div>
+        <img class="bloglist-img" src="images/placeholder/list_blank.png" alt="Article 3" />
+        <span class="tile-date tealtxt"><span class="date">01</span><span class="month">七月</span></span>
+        <span class="tile-cat teal">活动3</span>
+        </a>
+    </div>
+    <div class="bloglist">
+        <a href="n_activityDetail.html" title="Article 4">
+        <div class="bl-posttitle"><span class="bl-title">活动4的标题</span></div>
+        <img class="bloglist-img" src="images/placeholder/list_blank.png" alt="Article 4" />
+        <span class="tile-date bluetxt"><span class="date">30</span><span class="month">六月</span></span>
+        <span class="tile-cat blue">活动4</span>
+        </a>
+    </div>
+    <div class="bloglist">
+        <a href="n_activityDetail.html" title="Article 5">
+        <div class="bl-posttitle"><span class="bl-title">活动5的标题</span></div>
+        <img class="bloglist-img" src="images/placeholder/list_blank.png" alt="Article 5" />
+        <span class="tile-date browntxt"><span class="date">28</span><span class="month">六月</span></span>
+        <span class="tile-cat brown">活动5</span>
+        </a>
+    </div>   
+    
+    <!-- BEGIN PAGINATION -->
+    <div class="pagination clearfix">
+    	<span class="pages">Page 1 of 3</span>
+        <span class="current">1</span>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="nextpagelink">&raquo;</a>
+    </div>
+    <!-- END PAGINATION -->
+</section>
+<!-- END LEFT CONTENT -->
+
+<!-- BEGIN SIDEBAR -->
+<section id="sidebar">
+
+<div id="search" class="widget" style="display:none;">
+<form action=" ">
+<input id="search-field" type="search" name="sitesearch" class="placeholder" placeholder="Search" />
+<input type="submit" id="search-submit" value=" " />
+</form>
+</div><!-- end #search -->
+
+<div id="recent-box" class="widget">
+<h5>最新活动一览</h5>
+<ul class="articles-widget">
+<li>
+	<a href="n_activityDetail.html">
+	<img src="images/placeholder/medium_blank.png" alt="Article 1" />
+    <div class="title">最新活动1介绍<br><span class="redtxt">最新活动1</span></div>
+    <div class="more"></div>
+    </a>
+</li>
+<li>
+	<a href="n_activityDetail.html">
+	<img src="images/placeholder/medium_blank.png" alt="Article 2" />
+    <div class="title">最新活动2介绍<br><span class="limetxt">最新活动2</span></div>
+    <div class="more"></div>
+    </a>
+</li>
+<li>
+	<a href="n_activityDetail.html">
+	<img src="images/placeholder/medium_blank.png" alt="Article 3" />
+    <div class="title">最新活动3介绍<br><span class="tealtxt">最新活动3</span></div>
+    <div class="more"></div>
+    </a>
+</li>
+</ul>
+</div><!-- end #recent-box -->
+<div class="widget text-widget">
+<h5>引言</h5>
+<p>活动说明概括<br/>
+1。。。。<br/>
+2。。。。<br/>
+3。。。。<br/></p></div><!-- end .text-widget -->
+
+
+</section>
+<!-- END SIDEBAR -->
+</section>
+<!-- END CONTENT -->
+
+<!-- BEGIN FOOTER -->
+<!--#include file="footer.html" -->
+<!-- END FOOTER -->
+
+</section><!-- end #container -->
+</div>
+</body>
+</html>

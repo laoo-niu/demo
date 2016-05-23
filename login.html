@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />    
+<link rel="stylesheet" type="text/css" href="style-beta.css" media="all" /> 
+<style type="text/css">
+/* #img_code { */
+/* 	width: 149px; */
+/* 	height: 56px; */
+/* } */
+body {
+	
+	font-size:12px;
+	font-family:\5b8b\4f53,Arial,Helvetica,sans-serif;
+	line-height:150%;
+	color:#333;
+	background: #f7f7f7;
+}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+a:link,a:visited{color:#333;text-decoration:none}
+a:hover{color:#c00;text-decoration:underline}
+a strong{color:#c00}
+input,select{border-radius:0}
+</style>
+<title>
+	登录
+</title></head>
+<body>
+    
+    <div class="layout">
+        <div class="content">
+            <div class="content_logo">
+                <a href="http://nanwu.com" target="_blank">南无</a>
+            </div>
+            <h1 class="title_big">
+                <span>一个帐号，连接农村与城市！</span></h1>
+            <div class="title_small">
+                <p>
+                	<a href="index.html" title="Home"><span>主页</span></a>
+                    <a href="http://www.nanwu.com/" target="_blank">精品村庄</a>,                    
+                    <a href="http://www.nanwu.com/" target="_blank">活动</a>,
+                    <a href="http://www.nanwu.com/" target="_blank">社区</a>,
+                    <a href="http://www.nanwu.com/?ref=dl1&rfpa_tracker=1_1" target="_blank">榜样</a>,
+                    <a href="http://www.nanwu.com/" target="_blank">农产品</a>
+                </p>
+            </div>
+            <div class="content_frame">
+                <div class="menu">
+                    <p>&nbsp;&nbsp;&nbsp;登录 </p>
+                </div>
+                <form id="form1">
+                <ul class="list">
+                    <li>
+                        <input type="text" id="txt_LoginName" name="txt_LoginName" value="" placeholder="邮箱/手机/用户名" class="login_input input_user input_width01" /></li>
+                    <li class="pow">
+                        <input type="password" id="txt_Password" name="txt_Password" class="login_input input_password input_width01" placeholder="密码" />
+                    </li>
+<!--                     <li id="li_code" style="display: none;"> -->
+<!--                         <input id="txt_Code" name="txt_Code" type="text" placeholder="输入右侧验证码" class="login_input input_width02" /> -->
+<!--                         <div id="div_CodeContainer" class="code"> -->
+<!--                             <img id="img_code" src="javascript:;" alt="点击图片换一张" style="width:149px;height:56px;" /> -->
+<!--                         </div> -->
+<!--                         <a href="javascript:;" title="看不清换一张" act="changeCode" class="refresh" onclick="return false;">看不清换一张</a> -->
+<!--                     </li> -->
+                    <li class="zddl">
+                        <div class="content_frame_left">
+                            <label>
+                                <input id="cbx_keepState" name="cbx_keepState" type="checkbox" checked="checked" value="true" />下次自动登录
+                            </label>
+                        </div>
+                        <div class="content_frame_right">
+                            <a href="/authenservice/AboutPassWord/RetrievePassword.html" >忘记密码</a>
+                            <span>|</span>
+                            <a href="register.html" >免费注册</a>
+                        </div>
+                    </li>
+                    <li>
+                        <input id="btn_Login" type="button" class="input_gray button_380_55" value="立即登录" />
+                    </li>
+                </ul>
+                </form>
+                <div class="clear">
+                </div>
+                <dl class="other_login" style="display:none;">
+                    <dt>您还可用以下帐号登录：</dt>
+                    <dd>
+                        <a class="lo_sina" title="微博帐号登录" href="javascript:;" onclick="openAgentLogin('Sina');">
+                            微博</a></dd>
+                    <dd>
+                        <a class="lo_qq" title="QQ帐号登录" href="javascript:;" onclick="openAgentLogin('Tencent');">
+                            QQ帐号</a></dd>
+                    <dd>
+                        <a title="人人网帐号登录" class="lo_ren" href="javascript:;" onclick="openAgentLogin('Renren');">
+                            人人网</a></dd>
+                    <dd>
+                        <a class="lo_weixin" title="微信帐号登录" href="javascript:;" onclick="openAgentLogin('Weixin');">
+                            微信</a></dd>
+                    <dd>
+                        <a class="lo_taobao" title="淘宝网帐号登录" href="javascript:;" onclick="openAgentLogin('Taobao');">
+                            淘宝网</a>
+                    </dd>
+                    <dd>
+                        <a class="lo_baidu" title="百度帐号登录" href="javascript:;" onclick="openAgentLogin('Baidu');">
+                            百度</a></dd>                    
+                </dl>
+            </div>
+        </div>
+        <!--页脚开始-->
+         <div class="foot_txt_box">
+            <div class="foot_txt">
+                <p>
+                    注册登录遇到问题？请拨打 4000-xxx-xxx<em>|</em><a href="http://www.nawu.com/feedback/" target="_blank">我要提意见</a></p>
+                <p>
+                    CopyRight &copy; 2016 NanWu,All Rights Reserved. </p>
+                <p>
+                    电信业务审批[2016]字第92号；经营许可证编号： <a target="_blank" href="http://www.nanwu.com/license/ICP.shtml">
+                        沪ICP证060175号</a>；公安备案号码：沪公网安备 0000000000号；</p>
+                <div class="foot_t_r">
+                    <a target="_blank" class="jjwz" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202001041200160">
+                        经营性网站备案信息</a><a target="_blank" class="jftx" href="http://fzp.bjhd.gov.cn/">沪闵行区警方提醒</a></div>
+            </div>
+        </div>
+        <!--页脚结束-->
+    </div>
+ 
+</body>
+</html>

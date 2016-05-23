@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>南无 - V2C平台</title>
+<!--#include file="head_include.html" -->
+</head>
+<body>
+<div id="bodypat">
+<section id="container">
+
+<!-- BEGIN HEADER -->
+<!--#include file="header.html" -->
+<!-- END HEADER -->
+
+<!-- BEGIN MAIN PAGE CONTENT -->
+<section class="mainpage">
+    <div class="toggle-content">
+        <div class="flexslider mainslide">
+        <ul class="slides">
+            <li>
+            <a class="exp-button" href="singleblogpost-1.shtml?101#r"><img style="height:320px" src="images/fruit/hallstadt.jpg" alt="童话般村庄" /></a>
+            <p class="flex-title">童话般村庄</p>
+            </li>
+            <li>
+            <a class="exp-button" href="singleblogpost-1.shtml?102#r"><img style="height:320px" src="images/fruit/p5382612a922718186.jpg" alt="最神秘村庄" /></a>
+            <p class="flex-title">最神秘村庄</p>
+            </li>
+            <li>
+            <a class="exp-button" href="singleblogpost-1.shtml?103#r"><img style="height:320px" src="images/fruit/mp18161260_1433825664038_2.jpeg" alt="核雕村" /></a>
+            <p class="flex-title">核雕村</p>
+            </li>
+        </ul>
+        </div><!-- end .flexslider -->
+    
+    <div class="quote-bg1"><div class="quote-w">这就是我们美丽的家乡, 最偏远的故乡, 最美的村庄. 你是不是从未发现自己家乡的美, 繁忙工作之余抽点时间了解更多关于农村的发展, 关心偏远的父老乡亲们.</div></div>
+    
+    </div><!-- end .toggle-content -->
+    <!-- END TOGGLE CONTENT -->
+</section><!-- end #mainpage -->
+
+<div id="loader"></div><!-- loader image for AJAX -->
+
+<section id="mainpage-mos">
+<!-- BEGIN TILE CONTENT -->
+<section id="content-mos" class="centered clearfix">
+<!-- Tile 1 -->
+<a href="#article-1" class="lightbox" rel="section">
+    <div class="tile large live" data-stops="0,100%,200%" data-speed="1000" data-delay="0" data-direction="horizontal" data-stack="true">
+        <div class="live-front">
+        	<img class="live-img" src="images/fruit/48d0006a2b497ce6870.jpg" alt="晚稻"/>
+        </div>
+        <div class="live-back">
+        	<img class="live-img" src="images/fruit/1345597900_40265300.jpg" alt="晚稻"/>
+        </div>
+		<div class="live-back">
+        	<img class="live-img" src="images/fruit/1485-11060122210668.jpg" alt="晚稻"/>
+        </div>
+        <span class="tile-date redtxt"><span class="date">20</span><span class="month">September</span></span>
+        <span class="tile-cat red">优质晚稻</span>
+    </div>
+</a>
+	<!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="article-1" class="lb-article">
+    <div class="article-img">
+        <div class="flexslider postslide">
+        <ul class="slides">
+    	<li>
+        <img class="tile-pre-img" src="images/fruit/48d0006a2b497ce6870.jpg" alt="Article 1" />
+        </li>
+        <li>
+        <img class="tile-pre-img" src="images/fruit/1345597900_40265300.jpg" alt="Article 1" />
+        </li>
+		<li>
+        <img class="tile-pre-img" src="images/fruit/1485-11060122210668.jpg" alt="Article 1" />
+        </li>
+        </ul>
+        </div>
+    </div>
+    <div class="article-date redtxt"><span class="date">20</span><span class="month">September</span></div>
+    <h1 class="lb-title"><a href="#">南方优质晚稻</a></h1>
+    <span class="postcat redtxt">4.2RMB/斤</span>
+    <div class="lb-excerpt">
+        <p>要说营养，肯定是一季稻和晚稻有营养，蛋白质含量较高，而早稻的淀粉纤维素含量相对较高。做干饭晚稻米好吃，但煮粥就是早稻米好吃。早稻米煮出来的粥比较粘稠，而晚稻米和一季稻煮的粥比较清。如果你们没有吃过，去买一点早稻米和晚稻米做饭煮粥对比一下就知道了。</p>
+        <p><a class="exp-button" href="singleblogpost-1.shtml?10#s">了解更多 &#8594;</a></p>
+    </div>
+    </article>
+    </div>
+    
+<!-- Tile 2 -->
+<a href="#portfolio-1" class="lightbox" rel="section">
+    <div class="tile small">
+    <img class="live-img" src="images/fruit/example_image.png" alt="猫咪收养"/>
+    </div>
+</a>
+	<!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="portfolio-1" class="lb-portfolio">
+    <div class="portfolio-img">
+    <img class="tile-pre-img" src="images/fruit/example_image.png" alt="猫咪收养" />
+    </div>
+    <div class="lb-port-cont">
+        <h1 class="lb-project"><a href="singleblogpost-1.shtml">猫咪收养</a></h1>
+        <span class="projectcat redtxt">6/5</span>
+        <div class="lb-desc">
+            <p>今天下班回家路上偶遇一只可爱的猫咪, 盯着我手里的羊肉串一直跟踪我到小区. 刚开始只是以为它嘴馋于是把羊肉串给了猫咪吃, 以为她吃完就会回家的. 谁知道这个小家伙竟然跟我回家了, 到家才发现小家伙的后腿受了伤像是被狗咬的, 可能是只流浪猫. 现在猫咪已经痊愈了洗澡后精神抖擞, 但是本人每天上班都早出晚归, 不忍心小猫咪一个人在家忍饥挨饿, 求同社区或邻近社区好心人收留.</p>
+            <p><a class="exp-button" href="singleblogpost-1.shtml">领养 &#8594;</a></p>
+        </div>
+    </div>
+    </article>
+    </div>
+
+<!-- Tile 3 -->
+<a href="#portfolio-2" class="lightbox" rel="section">
+    <div class="tile small">
+    <img class="live-img" src="images/fruit/02050012188.jpg" alt="落花生"/>
+    </div>
+</a>
+    <!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="portfolio-2" class="lb-portfolio">
+    <div class="portfolio-img">
+    <img class="tile-pre-img" src="images/fruit/02050012188.jpg" alt="落花生" />
+    </div>
+    <div class="lb-port-cont">
+        <h1 class="lb-project"><a href="singleblogpost-1.shtml">落花生</a></h1>
+        <span class="projectcat tealtxt">8 RMB/斤</span>
+        <div class="lb-desc">
+            <p>还记得许地山的那篇散文《落花生》吗?我们屋后有半亩隙地。母亲说：“让它荒芜着怪可惜，既然你们那么爱吃花生，就辟来做花生园吧。”我们几姊弟和几个小丫头都很喜欢——买种的买种，动土的动土，灌园的灌园；过不了几个月，居然收获了！...</p>
+            <p><a class="exp-button" href="singleblogpost-1.shtml">加入购物车 &#8594;</a></p>
+        </div>
+    </div>
+    </article>
+    </div>
+
+    
+<!-- Tile 4 -->
+<a href="#article-2" class="lightbox" rel="section">
+    <div class="tile medium live" data-stops="0,100%" data-speed="750" data-delay="1500">
+    	<div class="live-front">
+        	<img class="live-img" src="images/fruit/0506.png" alt="草霉" />
+        </div>
+        <div class="live-back">
+        	<img class="live-img" src="images/fruit/00016c42b423128ac6004a.jpg" alt="草霉" />
+        </div>
+        <span class="tile-date limetxt"><span class="date">06</span><span class="month">May</span></span>
+        <span class="tile-cat lime">草霉成熟啦!</span>
+    </div>
+</a>
+	<!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="article-2" class="lb-article">
+    <div class="article-img">
+    	<div class="flexslider postslide">
+        <ul class="slides">
+        <li>
+    	<img class="tile-pre-img" src="images/fruit/0506.png" alt="草霉" />
+        </li>
+        <li>
+    	<img class="tile-pre-img" src="images/fruit/00016c42b423128ac6004a.jpg" alt="草霉" />
+        </li>
+        </ul>
+        </div>
+    </div>
+    <div class="article-date limetxt"><span class="date">06</span><span class="month">May</span></div>
+    <h1 class="lb-title"><a href="#">西山的草霉成熟啦!!!</a></h1>
+    <span class="postcat limetxt">20 RMB/人</span>
+    <div class="lb-excerpt">
+        <p>果实鲜红美艳，柔软多汁，甘酸宜人，芳香馥郁。草莓营养丰富，富含多种有效成分，每百克鲜果肉中含维生素C60毫克，比苹果、葡萄含量还高。为了让客户体验生活,特推出进果园亲自采摘活动, 成年人20元/人, 学生可以凭学生证享受半价优惠. 你还在等什么赶紧带着孩子到我们果园享受丰收的喜悦吧!</p>
+        <p><a class="exp-button" href="singleblogpost-1.shtml">立即预定 &#8594;</a></p>
+    </div>
+    </article>
+    </div>
+
+<!-- Tile 5 -->
+<a href="#video-1" class="lightbox" rel="section">
+    <div class="tile small live" data-mode="flip" data-stops="100%" data-speed="750" data-delay="3000">
+    	<div class="live-front">
+        	<img class="live-img" src="images/fruit/play-panda-small.png" alt="视频" />
+        </div>
+        <div class="live-back blue">
+        	<img class="live-img" src="images/video.png" alt="视频" />
+        </div>
+    </div>
+</a>
+    <!-- Lightbox Article Preview -->
+    <div class="tile-pre"> 
+    <article id="video-1" class="lb-article">  
+    <div class="lb-video"> 
+		<video src="images/panda2_video.mp4" width="640" height="480" controls="controls" preload="preload" poster="images/fruit/play-panda.png">
+			您的浏览器不支持 video 标签。<!-- TODO 不支持的情况使用swf加载视频文件 -->
+		</video>
+    </div>
+    </article>
+    </div>
+    
+<!-- Tile 6 -->
+<div class="tile large exclude">
+	<div class="live-front themecolor">
+		<ul id="tweeter">
+		<li><a href="#">小明完成注册.</a>
+		</li><li><a href="singleblogpost-1.shtml">小王为社区捐献儿童读物10册.</a>
+		</li><li><a href="singleblogpost-1.shtml">5月1日陆家嘴社区为老人免费剪头发啦!!</a>
+		</li><li><a href="singleblogpost-1.shtml">协合医院进农村为留守老人检查常见老年病.</a>
+		</li><li><a href="singleblogpost-1.shtml">北方旱情加重, 进种下种的土豆眼见就不活了.</a>
+		</li><li><a href="singleblogpost-1.shtml">桃园村蟠桃大丰收</a>
+		</li></ul>
+	</div>
+</div>
+
+<!-- Tile 7 -->
+<a href="#quotation-1" class="lightbox" rel="section">
+    <div class="tile small live" data-mode="flip" data-stops="100%" data-speed="750" data-delay="4000">
+    	<div class="live-front">
+        	<img class="live-img" src="images/fruit/1450169741548.jpg" alt="玉米" />
+        </div>
+        <div class="live-back">
+        	<img class="live-img" src="images/fruit/a2.jpg" alt="玉米" />
+        </div>
+    </div>
+</a>
+    <!-- Lightbox Article Preview -->
+   <div class="tile-pre">
+    <article id="quotation-1" class="lb-article">
+    <div class="lb-quote">
+    玉米君与你有个约会
+    <div class="quote-author">&mdash; 西山</div>
+    </div>
+    </article>
+   </div>
+
+<!-- Tile 8 -->
+<a href="#portfolio-4" class="lightbox" rel="section">
+    <div class="tile medium">
+    <img class="live-img" src="images/fruit/41a000b52850dd2f453.jpg" alt="油菜花"/>
+    </div>
+</a>
+    <!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="portfolio-4" class="lb-portfolio">
+    <div class="portfolio-img">
+    <img class="tile-pre-img" src="images/fruit/41a000b52850dd2f453.jpg" alt="油菜花" />
+    </div>
+    <div class="lb-port-cont">
+        <h1 class="lb-project"><a href="singleblogpost-1.shtml">随拍</a></h1>
+        <span class="projectcat tealtxt">漂亮得醉了</span>
+        <div class="lb-desc">
+            <p>出昆明，过石林，经过师宗县后，油菜花逐渐多起来，而高潮更出现在进入罗平县以后。云南罗平的土地上正在演绎着贝多芬的田园交响曲，丘陵中遍布的石林，像乐章上最凝重的低音符，而漫山遍野的金黄的油菜花，则是五线谱中的最高音，主导着旋律的高潮。它们之间的中间调，由红褐色的云南泥土铺排，混合着零散的村镇和碧绿的稻田，而农夫和耕牛是乐章里的跳跃音符，让乐章充满人与自然的和谐……</p>
+            <p><a class="exp-button" href="singleblogpost-1.shtml">更多 &#8594;</a></p>
+        </div>
+    </div>
+    </article>
+    </div>
+    
+<!-- Tile 9 -->
+<a href="#portfolio-5" class="lightbox" rel="section">
+    <div class="tile small">
+    <img class="live-img" src="images/fruit/f1306978553749.jpg" alt="蕃茄"/>
+    </div>
+</a>
+    <!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="portfolio-5" class="lb-portfolio">
+    <div class="portfolio-img">
+    <img class="tile-pre-img" src="images/fruit/f1306978553749.jpg" alt="蕃茄" />
+    </div>
+    <div class="lb-port-cont">
+        <h1 class="lb-project"><a href="singleblogpost-1.shtml">小蕃茄</a></h1>
+        <span class="projectcat tealtxt">5 RMB/斤</span>
+        <div class="lb-desc">
+            <p>地里的蕃茄成熟啦!自家种养, 不施化肥不打农药. 果形周正，无裂口、虫咬，成熟适度，酸甜适口，肉肥厚，心室小者。宜选择成熟适度的番茄，不仅口味好，而且营养价值高。生食冷菜，热菜、炖和做汤都可以.</p>
+            <p><a class="exp-button" href="singleblogpost-1.shtml">更多 &#8594;</a></p>
+        </div>
+    </div>
+    </article>
+    </div>
+   
+<!-- Tile 10 -->
+<a href="#portfolio-3" class="lightbox" rel="section">
+    <div class="tile small">
+    <img class="live-img" src="images/fruit/8871.png" alt="西瓜"/>
+    </div>
+</a>
+    <!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="portfolio-3" class="lb-portfolio">
+    <div class="portfolio-img">
+    <img class="tile-pre-img" src="images/fruit/8871.png" alt="西瓜" />
+    </div>
+    <div class="lb-port-cont">
+        <h1 class="lb-project"><a href="singleblogpost-1.shtml">西瓜</a></h1>
+        <span class="projectcat redtxt">宝宝等不及了</span>
+        <div class="lb-desc">
+            <p>宝宝长大啦! 已经迫不及待了. 自家种养, 不施化肥不打农药.</p>
+            <p><a class="exp-button" href="singleblogpost-1.shtml">预定 &#8594;</a></p>
+        </div>
+    </div>
+    </article>
+    </div>
+
+<!-- END TILE CONTENT -->
+</section><!-- end #content-mos -->
+
+<!-- BEGIN AJAX PAGINATION -->
+<div class="clearfix ajax-pagination">
+<!--<a href="index2.html" class="next"></a>-->
+</div>
+<!-- END AJAX PAGINATION -->
+
+</section><!-- end #mainpage-mos -->
+
+<section class="mainpage">
+<!-- BEGIN TOGGLE CONTENT -->
+<div class="toggle-button"><span class="toggle-indicator">+</span></div>
+
+<div class="toggle-content close clearfix">
+<!-- Item 1 -->
+    <div class="fixed-medium">
+        <div class="highlights">
+        <img class="themecolor" src="images/responsive.png" alt="Responsive Design" />
+        </div>
+        <div class="highlights-txt">
+        <h2>二期内容</h2>
+        <p>版块预留</p>
+        </div>
+    </div>
+<!-- Item 2 -->
+    <div class="fixed-medium">
+        <div class="highlights">
+        <img class="themecolor" src="images/livetiles.png" alt="Live Tiles" />
+        </div>
+        <div class="highlights-txt">
+        <h2>三期内容</h2>
+        <p>版块预留</p>
+        </div>
+    </div>
+<!-- Item 3 -->
+    <div class="fixed-medium last">
+        <div class="highlights">
+        <img class="themecolor" src="images/customizability.png" alt="Customizability" />
+        </div>
+        <div class="highlights-txt">
+        <h2>四期内容</h2>
+        <p>版块预留</p>
+        </div>
+    </div>
+    
+</div><!-- end .toggle-content -->
+<!-- END TOGGLE CONTENT -->
+
+</section><!-- end .main-page -->
+<!-- END MAIN PAGE CONTENT -->
+
+<!-- BEGIN FOOTER -->
+<!--#include file="footer.html" -->
+<!-- END FOOTER -->
+
+</section><!-- end #container -->
+</div>
+</body>
+</html>

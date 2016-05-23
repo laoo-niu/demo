@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>乡村一览</title>
+<!--#include file="head_include.html" -->
+</head>
+<body>
+<div id="bodypat">
+<section id="container">
+<!-- BEGIN HEADER -->
+<!--#include file="header.html" -->
+</header>
+<!-- END HEADER -->
+
+<!-- BEGIN CONTENT -->
+<section id="content" class="clearfix">
+<!-- Title -->
+<!-- <div id="content-title">乡村一览</div> -->
+<div style="text-align:left;color:white;"><h3>乡村一览</h3></div>
+<!-- BEGIN LEFT CONTENT -->
+<section id="portfoliolist-left" class="clearfix">
+<!-- BEGIN FILTER -->
+<!-- <div id="filter" class="clearfix"> -->
+<!-- <ul id="port-filter"> -->
+<!-- 	<li class="filter-current"><a href="#">乡村介绍一览</a></li> -->
+<!--     <li><a href="#">Illustration</a></li> -->
+<!--     <li><a href="#">Graphic Design</a></li> -->
+<!-- </ul> -->
+<!-- </div> -->
+<!-- END FILTER -->
+
+	<div class="portfoliolist illustration">
+        <a href="n_villageDetail.html" title="Project 1">
+        <div class="pl-projecttitle"><span class="pl-title">Project 1</span></div>
+        <img class="portfoliolist-img" src="images/placeholder/list_blank.png" alt="Project 1" />
+        </a>
+    </div>
+    <div class="portfoliolist graphic-design">
+        <a href="n_villageDetail.html" title="Project 2">
+        <div class="pl-projecttitle"><span class="pl-title">Project 2</span></div>
+        <img class="portfoliolist-img" src="images/placeholder/list_blank.png" alt="Project 2" />
+        </a>
+    </div>
+    <div class="portfoliolist illustration">
+        <a href="n_villageDetail.html" title="Project 3">
+        <div class="pl-projecttitle"><span class="pl-title">Project 3</span></div>
+        <img class="portfoliolist-img" src="images/placeholder/list_blank.png" alt="Project 3" />
+        </a>
+    </div>
+    <div class="portfoliolist graphic-design">
+        <a href="n_villageDetail.html" title="Project 4">
+        <div class="pl-projecttitle"><span class="pl-title">Project 4</span></div>
+        <img class="portfoliolist-img" src="images/placeholder/list_blank.png" alt="Project 4" />
+        </a>
+    </div>
+    <div class="portfoliolist graphic-design">
+        <a href="n_villageDetail.html" title="Project 5">
+        <div class="pl-projecttitle"><span class="pl-title">Project 5</span></div>
+        <img class="portfoliolist-img" src="images/placeholder/list_blank.png" alt="Project 5" />
+        </a>
+    </div>    	
+    
+    <!-- BEGIN PAGINATION -->
+    <div class="pagination clearfix">
+    	<span class="pages">Page 1 of 3</span>
+        <span class="current">1</span>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="nextpagelink">&raquo;</a>
+    </div>
+    <!-- END PAGINATION -->
+</section>
+<!-- END LEFT CONTENT -->
+
+<!-- BEGIN SIDEBAR -->
+<section id="sidebar">
+
+<div id="search" class="widget" style="display:none;">
+<form action=" ">
+<input id="search-field" type="search" name="sitesearch" class="placeholder" placeholder="Search" />
+<input type="submit" id="search-submit" value=" " />
+</form>
+</div><!-- end #search -->
+
+<!--#include file="recent-activity.html" -->
+
+
+
+</section>
+<!-- END SIDEBAR -->
+</section>
+<!-- END CONTENT -->
+
+<!-- BEGIN FOOTER -->
+<!--#include file="footer.html" -->
+<!-- END FOOTER -->
+
+</section><!-- end #container -->
+</div>
+</body>
+</html>
