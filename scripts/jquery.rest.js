@@ -24,5 +24,26 @@ jQuery.extend({
 			}
 		}
 		return jQuery.getJSON( url, data, callback );
+	},
+	signIn: function( url, data, callback ) {
+		// Sign in
+		var u = data.s_u, p = md5(data.s_p);
+		var cert;
+		try
+		{
+			cert = btoa(u.concat(':', p));
+		}
+		catch (e)
+		{
+			cert = Base64.encode(u.concat(':', p));
+		}
+		delete data['s_u'];
+		delete data['s_p'];
+		data.cert = cert;
+
+		return jQuery.restGet(url, data, callback);
+	},
+	signOut: function( url, data, callback ) {
+		// Sign out
 	}
 });

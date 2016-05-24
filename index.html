@@ -25,22 +25,23 @@
 		</div>
 	</div>
   <script type="text/javascript">
-	var $progress = $('.progress'), $bar = $('.progress__bar'), $text = $('.progress__text'), percent = 0, update, resetColors, speed = 30, orange = 30, yellow = 55, green = 85, timer;
+	var $progress = $('.progress'), $bar = $('.progress__bar'), $text = $('.progress__text'), percent = 0, update, resetColors, speed = 20, orange = 30, yellow = 55, green = 85, timer;
 	resetColors = function () {
 	    $bar.removeClass('progress__bar--green').removeClass('progress__bar--yellow').removeClass('progress__bar--orange').removeClass('progress__bar--blue');
 	    $progress.removeClass('progress--complete');
 	};
 	update = function () {
+		window.clearTimeout(timer);
 	    timer = setTimeout(function () {
 	        percent += Math.random() * 1.8;
 	        percent = parseFloat(percent.toFixed(1));
 	        //$text.find('em').text(percent + '%');
 	        if (percent >= 100) {
 	            percent = 100;
+				$bar.css({ width: percent + '%' });
 	            $progress.addClass('progress--complete');
 	            $bar.addClass('progress__bar--blue');
 	            //$text.find('em').text('Complete');
-				window.clearTimeout(timer);
                 window.location.href = 'index.shtml';
 	        } else {
 	            if (percent >= green) {
@@ -50,10 +51,10 @@
 	            } else if (percent >= orange) {
 	                $bar.addClass('progress__bar--orange');
 	            }
-	            speed = Math.floor(Math.random() * 30);
+	            speed = Math.floor(Math.random() * 20);
 	            update();
+				console.log('speed');
 	        }
-
 	        $bar.css({ width: percent + '%' });
 	    }, speed);
 	};

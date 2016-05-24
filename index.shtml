@@ -18,21 +18,29 @@
         <div class="flexslider mainslide">
         <ul class="slides">
             <li>
-            <a class="exp-button" href="singleblogpost-1.shtml?101#r"><img style="height:320px" src="images/fruit/hallstadt.jpg" alt="童话般村庄" /></a>
-            <p class="flex-title">童话般村庄</p>
+            <a class="exp-button" href="singleblogpost-1.shtml?101#r"><img style="height:320px" src="images/fruit/hallstadt.jpg" alt="过往活动照片" /></a>
+            <!--<p class="flex-title">童话般村庄</p>--><span class="flex-lable-hide">过往活动照片</span>
             </li>
             <li>
-            <a class="exp-button" href="singleblogpost-1.shtml?102#r"><img style="height:320px" src="images/fruit/p5382612a922718186.jpg" alt="最神秘村庄" /></a>
-            <p class="flex-title">最神秘村庄</p>
+            <a class="exp-button" href="singleblogpost-1.shtml?102#r"><img style="height:320px" src="images/fruit/p5382612a922718186.jpg" alt="过往活动视频" /></a>
+            <!--<p class="flex-title">最神秘村庄</p>--><span class="flex-lable-hide">过往活动视频</span>
             </li>
             <li>
-            <a class="exp-button" href="singleblogpost-1.shtml?103#r"><img style="height:320px" src="images/fruit/mp18161260_1433825664038_2.jpeg" alt="核雕村" /></a>
-            <p class="flex-title">核雕村</p>
+            <a class="exp-button" href="singleblogpost-1.shtml?103#r"><img style="height:320px" src="images/fruit/mp18161260_1433825664038_2.jpeg" alt="美食美景" /></a>
+            <!--<p class="flex-title">核雕村</p>--><span class="flex-lable-hide">这就是我们美丽的家乡, 最偏远的故乡, 最美的村庄. 你是不是从未发现自己家乡的美, 繁忙工作之余抽点时间了解更多关于农村的发展, 关心偏远的父老乡亲们.</span>
+            </li>
+			<li>
+            <a class="exp-button" href="singleblogpost-1.shtml?103#r"><img style="height:320px" src="images/fruit/mp18161260_1433825664038_2.jpeg" alt="现有活动" /></a>
+			<span class="flex-lable-hide">现有活动</span>
+            </li>
+			<li>
+            <a class="exp-button" href="singleblogpost-1.shtml?103#r"><img style="height:320px" src="images/fruit/mp18161260_1433825664038_2.jpeg" alt="我为家乡做代言" /></a>
+			<span class="flex-lable-hide">我为家乡做代言</span>
             </li>
         </ul>
         </div><!-- end .flexslider -->
     
-    <div class="quote-bg1"><div class="quote-w">这就是我们美丽的家乡, 最偏远的故乡, 最美的村庄. 你是不是从未发现自己家乡的美, 繁忙工作之余抽点时间了解更多关于农村的发展, 关心偏远的父老乡亲们.</div></div>
+    <div class="quote-bg1"><div class="quote-w">过往活动照片</div></div>
     
     </div><!-- end .toggle-content -->
     <!-- END TOGGLE CONTENT -->
@@ -194,40 +202,6 @@
     </article>
     </div>
     
-<!-- Tile 6 -->
-<div class="tile large exclude">
-	<div class="live-front themecolor">
-		<ul id="tweeter">
-		<li><a href="#">小明完成注册.</a>
-		</li><li><a href="singleblogpost-1.shtml">小王为社区捐献儿童读物10册.</a>
-		</li><li><a href="singleblogpost-1.shtml">5月1日陆家嘴社区为老人免费剪头发啦!!</a>
-		</li><li><a href="singleblogpost-1.shtml">协合医院进农村为留守老人检查常见老年病.</a>
-		</li><li><a href="singleblogpost-1.shtml">北方旱情加重, 进种下种的土豆眼见就不活了.</a>
-		</li><li><a href="singleblogpost-1.shtml">桃园村蟠桃大丰收</a>
-		</li></ul>
-	</div>
-</div>
-
-<!-- Tile 7 -->
-<a href="#quotation-1" class="lightbox" rel="section">
-    <div class="tile small live" data-mode="flip" data-stops="100%" data-speed="750" data-delay="4000">
-    	<div class="live-front">
-        	<img class="live-img" src="images/fruit/1450169741548.jpg" alt="玉米" />
-        </div>
-        <div class="live-back">
-        	<img class="live-img" src="images/fruit/a2.jpg" alt="玉米" />
-        </div>
-    </div>
-</a>
-    <!-- Lightbox Article Preview -->
-   <div class="tile-pre">
-    <article id="quotation-1" class="lb-article">
-    <div class="lb-quote">
-    玉米君与你有个约会
-    <div class="quote-author">&mdash; 西山</div>
-    </div>
-    </article>
-   </div>
 
 <!-- Tile 8 -->
 <a href="#portfolio-4" class="lightbox" rel="section">
@@ -251,52 +225,40 @@
     </div>
     </article>
     </div>
-    
-<!-- Tile 9 -->
-<a href="#portfolio-5" class="lightbox" rel="section">
-    <div class="tile small">
-    <img class="live-img" src="images/fruit/f1306978553749.jpg" alt="蕃茄"/>
+<!-- Tile 6 
+<div class="tile large exclude">
+	<div class="live-front themecolor">
+		<ul id="tweeter">
+		<li><a href="#">小明完成注册.</a>
+		</li><li><a href="singleblogpost-1.shtml">小王为社区捐献儿童读物10册.</a>
+		</li><li><a href="singleblogpost-1.shtml">5月1日陆家嘴社区为老人免费剪头发啦!!</a>
+		</li><li><a href="singleblogpost-1.shtml">协合医院进农村为留守老人检查常见老年病.</a>
+		</li><li><a href="singleblogpost-1.shtml">北方旱情加重, 进种下种的土豆眼见就不活了.</a>
+		</li><li><a href="singleblogpost-1.shtml">桃园村蟠桃大丰收</a>
+		</li></ul>
+	</div>
+</div> -->
+
+<!-- Tile 7 -->
+<a href="#quotation-1" class="lightbox" rel="section">
+    <div class="tile small live" data-mode="flip" data-stops="100%" data-speed="750" data-delay="4000">
+    	<div class="live-front">
+        	<img class="live-img" src="images/fruit/1450169741548.jpg" alt="玉米" />
+        </div>
+        <div class="live-back">
+        	<img class="live-img" src="images/fruit/a2.jpg" alt="玉米" />
+        </div>
     </div>
 </a>
     <!-- Lightbox Article Preview -->
-    <div class="tile-pre">
-    <article id="portfolio-5" class="lb-portfolio">
-    <div class="portfolio-img">
-    <img class="tile-pre-img" src="images/fruit/f1306978553749.jpg" alt="蕃茄" />
-    </div>
-    <div class="lb-port-cont">
-        <h1 class="lb-project"><a href="singleblogpost-1.shtml">小蕃茄</a></h1>
-        <span class="projectcat tealtxt">5 RMB/斤</span>
-        <div class="lb-desc">
-            <p>地里的蕃茄成熟啦!自家种养, 不施化肥不打农药. 果形周正，无裂口、虫咬，成熟适度，酸甜适口，肉肥厚，心室小者。宜选择成熟适度的番茄，不仅口味好，而且营养价值高。生食冷菜，热菜、炖和做汤都可以.</p>
-            <p><a class="exp-button" href="singleblogpost-1.shtml">更多 &#8594;</a></p>
-        </div>
+   <div class="tile-pre">
+    <article id="quotation-1" class="lb-article">
+    <div class="lb-quote">
+    玉米君与你有个约会
+    <div class="quote-author">&mdash; 西山</div>
     </div>
     </article>
-    </div>
-   
-<!-- Tile 10 -->
-<a href="#portfolio-3" class="lightbox" rel="section">
-    <div class="tile small">
-    <img class="live-img" src="images/fruit/8871.png" alt="西瓜"/>
-    </div>
-</a>
-    <!-- Lightbox Article Preview -->
-    <div class="tile-pre">
-    <article id="portfolio-3" class="lb-portfolio">
-    <div class="portfolio-img">
-    <img class="tile-pre-img" src="images/fruit/8871.png" alt="西瓜" />
-    </div>
-    <div class="lb-port-cont">
-        <h1 class="lb-project"><a href="singleblogpost-1.shtml">西瓜</a></h1>
-        <span class="projectcat redtxt">宝宝等不及了</span>
-        <div class="lb-desc">
-            <p>宝宝长大啦! 已经迫不及待了. 自家种养, 不施化肥不打农药.</p>
-            <p><a class="exp-button" href="singleblogpost-1.shtml">预定 &#8594;</a></p>
-        </div>
-    </div>
-    </article>
-    </div>
+   </div>
 
 <!-- END TILE CONTENT -->
 </section><!-- end #content-mos -->

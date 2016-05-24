@@ -82,7 +82,13 @@ $(document).ready(function(){
 	//Create a function for tiles
 	function matrix_tiles_init() {
 	//Flexslider	
-    $('.flexslider').flexslider();
+    $('.flexslider').flexslider({
+		slideshowSpeed: 5000,
+		//animation: 'slide',
+		after: function(slider) {
+			slider.next().find('.quote-w').html(slider.find('span:eq(' + slider.currentSlide + ')').html());
+		}
+	});
 	
 	//Fix Masonry container width error
 	function matrix_fix_masonry() {
@@ -342,22 +348,24 @@ $(document).ready(function(){
 			$ct1.html(Number($ct1.html()) + 1);
 		}
 	});
+
+	// Menu click
 	selectMenu();
 	function selectMenu(){
 		var url = window.location.href, index = 0;
 		if (url.indexOf('index')>-1)
 		{
 			index = 0;
-		} else if (url.indexOf('n_villageList')>-1)
+		} else if (url.indexOf('n_activity')>-1)
 		{
 			index = 1;
-		} else if (url.indexOf('n_activity')>-1)
+		} else if (url.indexOf('n_villageList')>-1)
 		{
 			index = 2;
 		} else if (url.indexOf('aboutus')>-1)
 		{
 			index = 3;
-		} else if (url.indexOf('contact')>-1)
+		} else if (url === '#')
 		{
 			index = 4;
 		}
@@ -366,5 +374,19 @@ $(document).ready(function(){
 		$('header ul#nav>li.current').removeClass('current');
 		$('header ul#nav>li:eq('+index+')').addClass('current');
 	}
+
+	// Link of Me
+	$('#me').click(function(){
+		if ($('header ul#nav>li:last').hasClass('current'))
+			return false;
+		$('header ul#nav>li.current').removeClass('current');
+		$('header ul#nav>li:last').addClass('current');
+		// If unsign in
+		var token = $.cookie('token');
+		// 已登录时跳至个人主页
+		if (token) window.location.href = 'me.sthml';
+		// 未登录时跳至登录画面
+		else window.location.href = 'login.html';
+	});
 });
 

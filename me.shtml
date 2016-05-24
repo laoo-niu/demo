@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人</title>
+<!--#include file="head_include.html" -->
+<script type="text/javascript" src="scripts/jquery.rest.js" ></script>
+<!--[if IE 9]>
+  <style type="text/css">
+  @import url("style-ie9.css");
+  </style>
+<![endif]-->
+</head>
+<body>
+<div id="bodypat">
+<section id="container">
+
+<!-- BEGIN HEADER -->
+<!--#include file="header.html" -->
+<!-- END HEADER -->
+
+<!-- BEGIN CONTENT -->
+<section id="content" class="clearfix">
+<!-- Title --><div id="content-title"></div>
+
+<!-- BEGIN SINGLE CONTENT -->
+<section id="single">
+    <article id="article-1" class="sbp-article">
+    
+        <div class="article-img">
+           <div class="flexslider postslide">
+            <ul class="slides">
+            <li>
+            <img class="tile-pre-img" src="images/fruit/p5382612a922718186.jpg" alt="Article 1" />
+            </li>
+            <li>
+            <img class="tile-pre-img" src="images/fruit/48d0006a2b497ce6870.jpg" alt="Article 1" />
+            </li>
+            </ul>
+            </div>
+        </div>
+    
+    <div class="article-date redtxt"><span class="date">20</span><span class="month">September</span></div>
+    <h1 class="sbp-title">旅游好去处</h1>
+    <span class="postcat redtxt">旅游</span>
+    <!-- BEGIN POST CONTENT -->
+    <div class="sbp-content">
+        <p>同里景区位于太湖之滨，大运河畔，东南接318国道，西接205省道，距虹桥机场80公里。西连苏嘉205省道，离苏州18公里，吴江6公里，水陆交通便捷，地理位置优越，素有“苏凇要途”之称。同里景区为庞山湖、九里湖、同里湖、南星湖、叶泽湖所环抱，可谓“诸湖环抱于外，一镇包涵中”。在这里可以饱览江南典型的“小桥、流水、人家”的水乡景观，领略古镇的神韵。</p>
+
+    	<p>周庄镇位于苏州市东南38公里，昆山市境内西南33公里，上海距周庄约70公里，目前车程约1.5小时，沪青平公路建成通车后，往来车程仅需40分钟。现有景点20余处，包括：张厅、沈厅、双桥、富安桥、南湖秋月园、全福寺、古戏台、逸飞之家、蚬江渔唱、叶楚伧故居、迷楼、源丰顺酒作坊、澄虚道院、贞丰民俗文化街、天孝德民间收藏馆、周庄博物馆、周庄画家村及古镇沿河明清建筑等。</p>
+        
+        <div class="quote">这里是江南地区汉族水乡风貌最具代表性特征的地区，以深邃的历史文化底蕴、清丽婉约的水乡古镇风貌、古朴的吴侬软语民俗风情，在世界上独树一帜、驰名中外。著名的苏式水乡古镇有周庄、同里、千灯、木渎、甪直和锦溪等。</div>
+
+		<p>如果说太湖是一块巨大的翡翠，那么它周边的小岛和景致就是镶嵌在翡翠上的明珠。目前太湖周边的景点有东山、西山、光福、穹窿山、旺山和苏州湾等。品味太湖，舌尖有四季，太湖的水产和水八仙更是人人称赞。</p>
+        
+        <h3>水乡古镇 :</h3>
+        <ul>
+        	<li><a href="#">周庄</a></li>
+            <li><a href="#">同里</a></li>
+            <li><a href="#">千灯</a></li>
+            <li><a href="#">木渎</a></li>
+			<li><a href="#">甪直</a></li>
+			<li><a href="#">锦溪</a></li>
+        </ul>
+		<p><img class="tile-pre-img" src="images/fruit/2015122701301984.jpg" alt="Article 1" /></p>
+		<p>循着辉煌灯火，品尝万千美食，这里有目前中国最大的城市湖泊公园金鸡湖、以“夜天堂”为核心理念打造的月光码头、风清月白夜的湖滨新天地、国际风情特色水街李公堤等，现代苏州多姿多彩的生活，让你尽情领略。今年“五一”小长假期间天气总体晴好，气候宜人，是举家出游的良机。各相关部门和旅游单位精心组织，密切合作，较好地完成了小长假内各项工作。纵观“五一”假日旅游，太仓市旅游景区继续呈现节日氛围热烈、旅游市场日趋成熟、安全秩序井然等特点，主要情况如下：</p>
+        <p>“五一”小长假期间，太仓市主要景区共接待游客15.2万人次，同比增长6.8%；主要营业收入大幅增长。其中，金仓湖公园成为休闲出游的最佳去处，接待游客7.5人次，沙溪古镇接待游客3.11万人次，现代农业园接待游客3.05万人次，南园接待游客8300人次，上述景区接待量与去年相比均小幅增长；浏河古镇接待游客0.38万人次，江滩湿地公园接待游客1.2万人次；正在进行省级乡村旅游区申报的电站村接待游客1000人次，天竹园山庄接待游客800人次。</p>
+        <p>假日期间，金仓湖公园积极做好现场游客疏导，开放新建的北门与停车场，使得游客停车入园更加便捷，吸引了大量的自驾游游客，日均游客量2.4 万人次。沙溪古镇纯朴的江南风情和人文景观迎来了大批上海游客，形式多样的活动也吸引了游客参与其中。现代农业园在保持优美的生态环境、高技术的现代农业展示、自然清新的乡村风貌的同时，新增多项亲子娱乐项目，受到广大市民及游客的亲睐，成为家庭亲子游的目的地。</p>
+        
+    </div><!-- end .sbp-content -->
+    <!-- END POST CONTENT -->
+    <!--<div id="authorinfo"><img id="author-avatar" src="images/commenter.png" alt="Avatar"/>
+    <span class="author">Written by <a href="#">John Doe</a></span>
+    <p>Phasellus rutrum posuere est ut imperdiet. Integer sodales mauris quis ante rhoncus molestie. Fusce ac ipsum vitae eros sagittis cursus eu at ipsum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+    </div>-->
+    
+    </article>
+    
+<!-- BEGIN COMMENTS -->
+<section id="comments">
+<div class="section-title">抢沙发</div>
+
+<!-- BEGIN LIST  -->
+<ol class="commentlist"></ol>
+<!-- END LIST -->
+
+</section><!-- end #comments -->
+<!-- END COMMENTS -->
+</section><!-- end #single -->
+<!-- END SINGLE CONTENT -->
+
+
+<!-- BEGIN SIDEBAR -->
+<section id="sidebar">
+
+<div id="post-meta" class="widget">
+
+<div class="tile-sidebar">
+    <div class="meta1 comments">
+    <img src="images/sidebar-comm.png" alt="评论" />
+    <div class="count">0</div>
+    <div class="comment-widget">
+    <a href="#comments"><div class="comment-count">0</div></a>
+    <a href="#respond"><div class="comment-quick-reply">评论</div></a>
+    </div>
+    </div><!-- end .meta1 -->
+</div><!-- end .tile-sidebar -->
+
+<div class="tile-sidebar" style="background:#3b5998">
+    <div class="meta like">
+    <a href="#" class="meta-like"><img src="images/sidebar-fb.png" alt="点赞" /></a>
+    <div class="count">0</div>
+    </div><!-- end .meta2 -->
+</div><!-- end .tile-sidebar -->
+
+<div class="tile-sidebar" style="background:#3cf">
+    <div class="meta browse">
+    <img src="images/sidebar-twtr.png" alt="浏览" />
+    <div class="count1">0</div>
+    </div><!-- end .meta3 -->
+</div><!-- end .tile-sidebar -->
+
+</div><!-- end post-meta -->
+
+
+<!--#include file="recent-rural.html" -->
+
+
+</section>
+<!-- END SIDEBAR -->
+</section>
+<!-- END CONTENT -->
+
+<!-- BEGIN FOOTER -->
+<!--#include file="footer.html" -->
+<!-- END FOOTER -->
+
+</section><!-- end #container -->
+</div>
+</body>
+<script src="scripts/datascript.js" type="text/javascript"></script>
+</html>

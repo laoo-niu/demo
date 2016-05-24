@@ -89,7 +89,7 @@ header a{
 }
 header{
 	min-height:100px;
-	margin:50px 5px 10px 5px;
+	margin:0px 5px 10px 5px;
 	background:#000;
 }
 #headerlink{
@@ -123,7 +123,7 @@ nav{
 @media all and (max-width:780px) {
 	
 header{
-	padding-top:25px;
+	padding-top:0px;
 }
 #headerlink{
 	float:none;
@@ -404,7 +404,7 @@ article ul li{
 	display:block;
 }
 .mainpage .toggle-content{
-	margin-top:10px;
+	margin-top:0px;
 }
 #content .toggle-content{
 	border:1px solid;
@@ -3016,7 +3016,7 @@ html[xmlns] .slides {display: block;}
 /* FlexSlider Default Theme
 *********************************/
 .flexslider {margin: 0; position: relative; zoom: 1; color:#fff;}
-.mainslide{margin-bottom:10px;}
+.mainslide{margin-bottom:5px;}
 .postslide{overflow:hidden;position:relative;}
 article ul.slides li{padding:0;margin:0;}
 article ul.flex-direction-nav{height:0;}
@@ -3081,7 +3081,11 @@ article ul.flex-direction-nav{height:0;}
 	width:100%;
 }
 }
-
+.flex-lable-hide{
+	height: 0px;
+	line-height: 0px;
+	display: none;
+}
 /*
  * Skin for jPlayer Plugin (jQuery JavaScript Library)
  * http://www.happyworm.com/jquery/jplayer
