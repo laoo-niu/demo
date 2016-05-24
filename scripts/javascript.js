@@ -386,7 +386,7 @@ $(document).ready(function(){
 		// 已登录时跳至个人主页
 		if (token) window.location.href = 'me.sthml';
 		// 未登录时跳至登录画面
-		else window.location.href = 'login.html';
+		else window.location.href = 'login.html?from=me.shtml';
 	});
 });
 
