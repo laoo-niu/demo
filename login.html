@@ -10,16 +10,16 @@
 <script type="text/javascript" src="scripts/jquery.rest.js" ></script>
 <style type="text/css">
 /* #img_code { */
-/* 	width: 149px; */
-/* 	height: 56px; */
+/*     width: 149px; */
+/*     height: 56px; */
 /* } */
 body {
-	
-	font-size:12px;
-	font-family:\5b8b\4f53,Arial,Helvetica,sans-serif;
-	line-height:150%;
-	color:#333;
-	background: #f7f7f7;
+    
+    font-size:12px;
+    font-family:\5b8b\4f53,Arial,Helvetica,sans-serif;
+    line-height:150%;
+    color:#333;
+    background: #f7f7f7;
 }
 ol,ul{list-style:none}
 caption,th{text-align:left}
@@ -30,25 +30,23 @@ a strong{color:#c00}
 input,select{border-radius:0}
 </style>
 <title>
-	登录
+    登录
 </title></head>
 <body>
     
     <div class="layout">
         <div class="content">
             <div class="content_logo">
-                <a href="http://nanwu.com" target="_blank">南无</a>
+                <a href="index.shtml" target="_blank">南无</a>
             </div>
             <h1 class="title_big">
                 <span>一个帐号，连接农村与城市！</span></h1>
             <div class="title_small">
                 <p>
-                	<a href="index.html" title="Home"><span>主页</span></a>
-                    <a href="http://www.nanwu.com/" target="_blank">精品村庄</a>,                    
-                    <a href="http://www.nanwu.com/" target="_blank">活动</a>,
-                    <a href="http://www.nanwu.com/" target="_blank">社区</a>,
-                    <a href="http://www.nanwu.com/?ref=dl1&rfpa_tracker=1_1" target="_blank">榜样</a>,
-                    <a href="http://www.nanwu.com/" target="_blank">农产品</a>
+                    <a href="index.shtml" title="主页"><span>主页</span></a>|
+                    <a href="activity.shtml" title="活动">活动</a>|
+                    <a href="nices.shtml" title="Home">美食美景</a>|
+                    <a href="aboutus.shtml" target="_blank">关于</a>
                 </p>
             </div>
             <div class="content_frame">
@@ -76,7 +74,7 @@ input,select{border-radius:0}
                             </label>
                         </div>
                         <div class="content_frame_right">
-                            <a href="/authenservice/AboutPassWord/RetrievePassword.html" >忘记密码</a>
+                            <a href="retrievePassword.html" >忘记密码</a>
                             <span>|</span>
                             <a href="register.html" >免费注册</a>
                         </div>
@@ -130,5 +128,13 @@ input,select{border-radius:0}
         <!--页脚结束-->
     </div>
 <script src="scripts/datascript.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+    if (localStorage.s_u)
+    {
+        document.forms['form_sign']['s_u'].value = localStorage.s_u;
+    }
+});
+</script>
 </body>
 </html>
