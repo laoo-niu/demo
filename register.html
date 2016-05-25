@@ -14,98 +14,63 @@ body {
     font-size:12px;
     font-family:\5b8b\4f53,Arial,Helvetica,sans-serif;
     line-height:150%;
-    color:#333;
-    background: #f7f7f7;
+    color:#ffffff;
+	background:url(images/fruit/pagehome.jpg) center top no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
 }
 ol,ul{list-style:none}
 caption,th{text-align:left}
-h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
-a:link,a:visited{color:#333;text-decoration:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+a:link,a:visited{color:#ffffff;text-decoration:none}
 a:hover{color:#c00;text-decoration:underline}
-a strong{color:#c00}
+a strong{color:#ffffff}
 input,select{border-radius:0}
 </style>
 </head>
 <body >
 <div class="cont_990">
     <div class="zc_logo">
-        <h2>
-            <a target="_blank" href="http://www.nanwu.com/">南无</a>
+        <h2 >
+            <a target="_blank" href="http://www.nanwu.com/" ></a>
         </h2>
         <div class="top_right">
             <p>已有帐号，<a href="login.html">马上登录</a></p>
         </div>
     </div>
-    
+	<div class="title_small" >
+        	   		<a href="index.shtml" title="Home"><span>主页</span></a>,
+                    <a href="activity.shtml" >活动</a>,
+                    <a  href="nices.shtml" >美食美景</a>,
+                    <a href="aboutus.shtml" >关于</a>,
+    </div>
     <div class="zc_frame">
         <div class="zc_frame_left" >
-            <form id="form_submit">
-                <h2>注册帐号！</h2>
-                <ul class="list">
-                    <li class="z_index"><i>手机号：</i>
-                        <input type="text" id="txt_mobile" maxlength="11" class="zc_input input_width03" placeholder="请输入手机号" value="">
+            <form id="form_submit" style="margin-left:-8px;">
+                <h2 style="color:#ffffff;">注册帐号！</h2>
+                <ul class="list" style="margin-left:-30px;">
+                    <li><i>手机号：</i>
+                        <input type="text" id="txt_mobile" maxlength="11" class="zc_input input_width05" placeholder="请输入手机号" value="">
                     <div class="prompt" style="display: none;"></div></li>
-<!--                     <li><i>验证码：</i> -->
-<!--                         <input type="text" name="imgCode" id="txt_imgCode" class="zc_input input_width04"> -->
-<!--                         <div class="code"> -->
-<!--                             <img id="codeImg" src="/authenservice/common/CheckCode.html" alt="点击图片重新获取验证码" act="ChangeImgCode"> -->
-<!--                         </div> -->
-<!--                         <a href="javascript:;" act="ChangeImgCode" class="refresh">看不清？换一张</a> -->
-<!--                     <div class="prompt" style="display: none;"></div></li> -->
-                        <li style="overflow: visible;"><i>密码：</i>
-                        <input type="text" class="zc_input input_width03" maxlength="20"  id="txt_password">
-                        
-<!--                     <li style="overflow: visible;"><i>校验码：</i> -->
-<!--                         <input type="text" class="zc_input input_width04" id="txt_mobileCode"> -->
-<!--                         <input type="button" id="btn_getMobileCode" class="input_gray button_jym" value="免费获取校验短信"> -->
+						<li style="overflow: visible;"><i>密码：</i>
+                        <input type="text" class="zc_input input_width05" maxlength="20"  id="txt_password">                        
                     <div class="prompt" style="display: none;"></div></li>
                     <li class="xy"><i>&nbsp;</i><input id="cbxAgree" checked="checked" name="cbxAgree" type="checkbox">
                         <span>我已经看过并同意<a href="license.html" target="_blank">《网络服务协议》</a></span>
                     </li>
                     <li class="button_zc"><i></i>
-                        <input type="button" value="立即注册" class="input_gray button_181_55" id="btn_submit">
-                        <a class="qhyx" href="http://www.nanwu.com/feedback/" target="_blank">求助！注册总是不成功&gt;&gt;</a>
+                        <input type="button" value="立即注册" class="input_gray button_181_56" id="btn_submit">                      
+                    </li>
+                    <li><i>&nbsp;</i>
+                      <a  href="http://www.nanwu.com/feedback/" target="_blank">求助！注册总是不成功&gt;&gt;</a>
                     </li>
                 </ul>
             </form>
         </div>
-        <div class="zc_frame_right" style="background-color:beige">
-               <br/><br/><br/>    
-                       <a href="index.shtml" title="Home"><span>主页</span></a>
-               <br/><br/><br/>    
-                    <a href="activity.shtml" >活动</a>
-               <br/><br/><br/>
-                    <a  href="nices.shtml" >美食美景</a>
-               <br/><br/><br/>
-                    <a  href="aboutus.shtml" >关于</a>
-          <br/><br/><br/>
-            <dl class="list" style="display:none;">
-                <dt>您还可使用以下帐号直接登录：</dt>
-                <dd>
-                    <a class="lo_sina" title="微博帐号登录" href="javascript:;" onclick="openAgentLogin('Sina');">微博</a>
-                </dd>
-                <dd>
-                    <a class="lo_qq" title="QQ帐号登录" href="javascript:;" onclick="openAgentLogin('Tencent');">QQ</a>
-                </dd>
-                <dd>
-                    <a class="lo_weixin" href="javascript:;" onclick="openAgentLogin('Weixin');">微信</a>
-                </dd>
-                <dd>
-                    <a class="lo_baidu" href="javascript:;" onclick="openAgentLogin('Baidu');">百度</a>
-                </dd>
-                <dd>
-                    <a title="人人网帐号登录" class="lo_ren" href="javascript:;" onclick="openAgentLogin('Renren');">人人</a>
-                </dd>
-                <dd>
-                    <a class="lo_taobao" href="javascript:;" onclick="openAgentLogin('Taobao');">淘宝</a>
-                </dd>
-            </dl>
-        </div>
-        <div class="clear">
-        </div>
-    </div>
-
-    <!--页脚开始-->
+	<!--页脚开始-->
     <div class="foot_txt_box">
         <div class="foot_txt">
             <p>注册登录遇到问题？请拨打 4000-xxx-xxx<em>|</em><a href="http://www.nanwu.com/feedback/" target="_blank">我要提意见</a></p>

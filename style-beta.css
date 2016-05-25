@@ -145,9 +145,9 @@ a.best:link,a.best:visited{color:#c00}
 .content_logo{margin:0 auto 47px;width:150px;height:56px}
 .content_logo a{display:block;width:150px;height:56px;background:url(images/Allimg.png) no-repeat 0 0;text-indent:-9999px;overflow:hidden}
 .title_big{margin-bottom:12px;overflow:hidden}
-.title_big span{color:#333;font-size:30px;display:block;height:40px;line-height:40px;font-weight:bold}
-.title_small{color:#666;font-size:14px;margin-bottom:38px}
-.title_small p a,.title_small p a:link,.title_small p a:visited{padding:0 5px;color:#666}
+.title_big span{color:#ffffff;font-size:30px;display:block;height:40px;line-height:40px;font-weight:bold}
+.title_small{color:#ffffff;font-size:14px;margin-bottom:38px}
+.title_small p a,.title_small p a:link,.title_small p a:visited{padding:0 5px;color:#ffffff}
 .title_small p a:hover{color:#c00;text-decoration:none}
 .content_frame{display:block!important;margin:0 auto;padding-top:10px;position:relative;width:380px;zoom:1}
 .content_frame ul li{width:380px;_width:383px;margin:10px 0 0;float:left;position:relative}
@@ -184,7 +184,8 @@ a.refresh:hover{background:url(images/Allimg.png) no-repeat -282px -162px}
 .content_frame_right span{margin:0 8px;color:#ddd}
 .content_frame_right a:hover{color:#c00;text-decoration:none}
 input.button_380_55{float:left;font-size:20px;height:53px;line-height:53px;width:378px}
-input.button_181_55{float:left;font-size:20px;height:53px;line-height:53px;width:179px}
+input.button_181_55{float:left;font-size:20px;height:53px;line-height:53px;width:300px}
+input.button_181_56{float:left;font-size:20px;height:53px;line-height:53px;width:260px}
 input.button_jym{float:left;font-size:20px;height:45px;line-height:45px;width:143px;font-size:14px;margin:0 15px 0 0;overflow:hidden}
 input.button_jym_hui{background:#f7f7f7;color:#ccc;cursor:default}
 input.button_jym_hui:hover{background:#f7f7f7;color:#ccc;cursor:default}
@@ -225,15 +226,15 @@ input.button_jym_hui:hover{background:#f7f7f7;color:#ccc;cursor:default}
 .foot_t_r a{display:inline-block;line-height:16px;padding-left:35px;width:65px}
 .foot_txt a,.foot_txt:visited{color:#666}
 .foot_txt a:hover{color:#c00;text-decoration:none}
-.cont_990{width:990px;margin:0 auto}
+.cont_990{width:400px;margin:0 auto}
 .zc_logo{height:114px}
-.zc_logo h2{float:left;margin:32px 0 0}
+.zc_logo h2{float:left;margin:32px 0 0;}
 .zc_logo h2 a{display:block;width:144px;height:50px;background:url(images/Allimg.png) no-repeat 0 -175px;text-indent:-9999px;overflow:hidden}
-.top_right{float:right;font-size:16px;margin:48px 0 0;color:#999}
-.zc_frame{background:#fff;padding:60px 20px 60px 60px;font-size:14px;color:#666;margin:0 0 35px}
+.top_right{float:right;font-size:16px;margin:48px 45px 0;color:#ffffff}
+.zc_frame{background:none;padding:10px 20px 10px 0px;font-size:14px;color:#666;margin:0 0 35px}
 .zc_frame_left{float:left;width:589px}
 .zc_frame_left h2{font-size:24px;color:#333;font-weight:bold;height:30px;line-height:30px;margin:0 0 55px}
-.zc_frame_left ul.list{margin:0 0 40px;overflow:hidden}
+.zc_frame_left ul.list{margin:0 0 0px;overflow:hidden}
 .zc_frame_left ul.list li{margin:0 0 20px;width:588px;height:45px;overflow:hidden}
 .zc_frame_left ul.list li i{float:left;font-style:normal;font-size:16px;margin:10px 20px 0 0;color:#666;display:block;width:64px;text-align:right}
 .zc_frame_left ul.list02 li i{width:140px}
@@ -241,7 +242,7 @@ input.button_jym_hui:hover{background:#f7f7f7;color:#ccc;cursor:default}
 .zc_frame_left ul.list04 li i{width:100px}
 .zc_frame_left ul.list05 li i{width:52px}
 .zc_frame_left ul.list li label input{float:left;margin:1px 7px 0 0;border:0}
-.zc_frame_left ul.list li.button_zc{padding:10px 0 0;height:53px;_height:60px}
+.zc_frame_left ul.list li.button_zc{padding:0 0 0;height:53px;_height:60px}
 .zc_frame .input_orange{padding:0 46px;height:53px;line-height:53px;font-size:20px}
 .zc_frame .input_gray_no{padding:0 46px;height:53px;line-height:53px;font-size:20px}
 .zc_frame_left .input_orange{float:left}
