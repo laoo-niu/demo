@@ -121,7 +121,7 @@ $('#signout').click(function(){
 
 var getUser = function() {
     var _user = sessionStorage._user||localStorage._user;
-    if (!_user)
+    /*if (!_user)
     {
         var _tk__ = $.cookie('_tk__');
         if (_tk__)
@@ -147,7 +147,11 @@ var getUser = function() {
         
     } else {
         _user = JSON.parse(_user);
-    }
+    }*/
+	if (_user)
+	{
+		_user = JSON.parse(_user);
+	}
     return _user;
 };
 
