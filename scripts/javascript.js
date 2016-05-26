@@ -63,7 +63,7 @@ $(document).ready(function(){
         $("<option />", {
            "selected": "selected",
            "value"   : "",
-           "text"    : "Go to..."
+           "text"    : "去哪儿..."
         }).appendTo("nav select");
         
         // Populate dropdown with menu items
