@@ -110,7 +110,7 @@ $('#btn_Login').click(function(){
 });
 
 // 退出登录
-$('#signout').click(function(){
+function logoutfun(){alert(1);
 	// TODO 二期加入未付款订单提示
 	// Clear local data
 	sessionStorage.clear();

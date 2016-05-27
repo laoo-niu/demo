@@ -391,6 +391,10 @@ $(document).ready(function(){
 	if (user)
 	{
 		$('#me').show();
+		$('#logout').show();
+		$('#login').hide();
+		$('#registermeber').hide();
+		
 		// TODO 显示名字和头像
 	}
 });

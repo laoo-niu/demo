@@ -5,13 +5,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <!-- 返回顶部调用 begin -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-<link href="style.css" title="style" rel="stylesheet" type="text/css" />
+<!--#include file="head_include.html" -->
 <link href="style-beta.css" title="style" rel="stylesheet" type="text/css" />
-<link id="clink" href="css/style-blue.css" title="style" rel="stylesheet" type="text/css" media="screen"/>
-<script src="scripts/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <link href="styles-personal.css" rel="stylesheet">
+
 <!-- 返回顶部调用 end-->
 <!--[if lt IE 9]>
 <script src="js/modernizr.js"></script>
@@ -203,6 +201,16 @@
   </div>
   <!--blogs end--> 
 </div>
+<script type="text/javascript">
+$(function(){
+    if (localStorage.s_u)
+    {
+        document.forms['form_sign']['s_u'].value = localStorage.s_u;
+    }
+    $('#me').hide();
+});
+</script>
 <!--mainbody end-->
 </body>
+
 </html>
