@@ -56,7 +56,8 @@ input,select{border-radius:0}
             </div>
             <div class="content_frame">
                 <div class="menu">
-                    <p>&nbsp;&nbsp;&nbsp;登录 </p>
+                    <p id="pLogin">&nbsp;&nbsp;&nbsp;登录 </p>
+                    <p id="presetPass" style="display:none;">&nbsp;&nbsp;&nbsp;重置密码 </p>
                 </div>
                 <form id="form_sign">
                 <ul class="list">
@@ -79,13 +80,14 @@ input,select{border-radius:0}
                             </label>
                         </div>
                         <div class="content_frame_right">
-                            <a href="retrievePassword.html" >忘记密码</a>
+                            <a id="forgetPass" href="#" >忘记密码</a>
                             <span>|</span>
                             <a href="register.html" >免费注册</a>
                         </div>
                     </li>
                     <li>
                         <input id="btn_Login" type="button" class="input_gray button_181_55" value="立即登录" />
+                         <input id="btn_RetrivedPass" style="display:none;" type="button" class="input_gray button_181_55" value="发送新密码至邮箱" />
                     </li>
                 </ul>
                 </form>
@@ -139,6 +141,24 @@ $(function(){
     {
         document.forms['form_sign']['s_u'].value = localStorage.s_u;
     }
+    
+});
+$("#forgetPass").bind("click",
+		function(){
+	$("#pLogin").hide();
+	$("#txt_Password").hide();
+	$("#btn_Login").hide();
+	$(".zddl").hide();
+	$("#txt_LoginName").attr("placeholder","邮箱");
+	
+	$("#presetPass").show();
+	$("#btn_RetrivedPass").show();
+});
+$("#btn_RetrivedPass").bind("click",
+		function(){
+	$("#txt_LoginName").hide();
+	$("#btn_RetrivedPass").val("请登录邮箱获取新密码重新登录！")
+	setTimeout(function(){window.location.href = 'login.html';},2000);
 });
 </script>
 </body>
