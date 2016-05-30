@@ -110,14 +110,14 @@ $('#btn_Login').click(function(){
 });
 
 // 退出登录
-function logoutfun(){alert(1);
+function logoutfun(){
 	// TODO 二期加入未付款订单提示
 	// Clear local data
 	sessionStorage.clear();
 	clearCookie();
 	window.location.reload(); // 从缓存中装载文档
 	//window.location.reload(true); // 绕过缓存从服务器上重新下载该文档
-});
+};
 
 var getUser = function() {
     var _user = sessionStorage._user||localStorage._user;

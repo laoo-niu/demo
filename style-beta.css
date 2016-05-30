@@ -236,7 +236,7 @@ input.button_jym_hui:hover{background:#f7f7f7;color:#ccc;cursor:default}
 .zc_frame_left h2{font-size:24px;color:#333;font-weight:bold;height:30px;line-height:30px;margin:0 0 55px}
 .zc_frame_left ul.list{margin:0 0 0px;overflow:hidden}
 .zc_frame_left ul.list li{margin:0 0 20px;width:588px;height:45px;overflow:hidden}
-.zc_frame_left ul.list li i{float:left;font-style:normal;font-size:16px;margin:10px 20px 0 0;color:#666;display:block;width:64px;text-align:right}
+.zc_frame_left ul.list li i{float:left;font-style:normal;font-size:16px;margin:10px 20px 0 0;color:#ffffff;display:block;width:64px;text-align:right}
 .zc_frame_left ul.list02 li i{width:140px}
 .zc_frame_left ul.list03 li i{width:80px}
 .zc_frame_left ul.list04 li i{width:100px}
@@ -286,7 +286,7 @@ input.button_jym_hui:hover{background:#f7f7f7;color:#ccc;cursor:default}
 .four_buzhou ul.list li.one{width:105px}
 .four_buzhou ul.list li b{display:block;border-radius:16px 16px 16px 16px;width:24px;height:24px;line-height:24px;text-align:center;background:#ccc;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:16px;margin:0 auto 10px;background:url(images/Allimg.png) no-repeat -251px -345px}
 .four_buzhou ul.list li em{display:block;width:210px;height:2px;background:#ccc;position:absolute;left:-29px;top:10px;_position:relative;_left:-53px;_overflow:hidden;zoom:1}
-.four_buzhou ul.list li span{font-size:16px;color:#333;display:block;height:80px;float:right;width:100px}
+.four_buzhou ul.list li span{font-size:16px;color:#ffffff;display:block;height:80px;float:right;width:100px}
 .four_buzhou ul.list li.current b{background-position:-251px -381px}
 .four_buzhou ul.list li.current em{background:#0a4e8a}
 .four_buzhou ul.list li span.two{padding:0 3px 0 0}

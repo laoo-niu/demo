@@ -45,5 +45,16 @@ jQuery.extend({
     },
     signOut: function( url, data, callback ) {
         // Sign out
+    },
+    update:function(url,data,callback){
+    	 var u = data.s_u, p = md5(data.s_p);
+    	$.ajax({
+    		 url: url+"/"+u+"/"+p+"/",
+    		 type: "post",
+    		 processData: false,
+    		 success: callback   
+    		}); 
+    	 delete data['s_u'];
+         delete data['s_p'];
     }
 });
