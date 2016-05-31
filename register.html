@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0," />
 <title>注册</title>
 <link rel="stylesheet" type="text/css" href="style-beta.css" media="all" />
 <script src="scripts/jquery.min.js" type="text/javascript"></script>
@@ -57,7 +57,7 @@ input,select{border-radius:0}
                         <input type="text" id="txt_mobile" name="s_u" maxlength="11" class="zc_input input_width05" placeholder="请输入手机号" value="">
                     <div class="prompt" id="info_mobile" style="display: none;color:#ffffff;" ></div></li>
 						<li style="overflow: visible;color:#ffffff;"><i>密码：</i>
-                        <input type="text" id="txt_password" name="s_p"  class="zc_input input_width05" maxlength="20"  >                        
+                        <input id="txt_password" name="s_p" type="password"  class="zc_input input_password input_width05" maxlength="20"  >                        
                     <div class="prompt" id="info_password" style="display: none;color:#ffffff;"></div></li>
                     <li class="xy"><i>&nbsp;</i><input id="cbxAgree" checked="checked" name="cbxAgree" type="checkbox">
                         <span>我已经看过并同意<a href="license.html" target="_blank">《网络服务协议》</a></span>
@@ -84,6 +84,7 @@ input,select{border-radius:0}
 <script type="text/javascript">
 $("#btn_register").bind("click",
 		function(){
+	if (!checkMobile($("#txt_mobile").val())) return;
 		$("#info_mobile").hide();
 		$("#info_password").hide();
 	 var _form = document.forms['form_register'];

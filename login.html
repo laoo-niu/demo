@@ -62,9 +62,12 @@ input,select{border-radius:0}
                 <form id="form_sign">
                 <ul class="list">
                     <li>
-                        <input type="text" id="txt_LoginName" name="s_u" value="" placeholder="手机" class="login_input input_user input_width05" /></li>
+                        <input type="text" id="txt_LoginName" name="s_u" value="" placeholder="手机" class="login_input input_user input_width05" />
+                         <div class="prompt" id="info_mobile" style="display: none;color:#ffffff;"></div>
+                    </li>
                     <li class="pow">
                         <input type="password" id="txt_Password" name="s_p" class="login_input input_password input_width05" placeholder="密码" />
+                     <div class="prompt" id="info_password" style="display: none;color:#ffffff;"></div>
                     </li>
 <!--                     <li id="li_code" style="display: none;"> -->
 <!--                         <input id="txt_Code" name="txt_Code" type="text" placeholder="输入右侧验证码" class="login_input input_width02" /> -->
@@ -143,6 +146,56 @@ $(function(){
     }
     
 });
+//登录
+$('#btn_Login').click(function(){
+	
+    var _form = document.forms['form_sign'];
+    if (!checkMobile(_form['s_u'].value)) return;
+    $.signIn(request_url.sn, {
+        's_u': _form['s_u'].value,
+        's_p': _form['s_p'].value,
+        'autosignin': _form['autosignin'].checked
+    }, function(data) {
+        if (data.code != 0)
+        {
+            // 10次登录失败则清除本地缓存数据及cookie
+            if (sessionStorage.signerror)
+            {
+                sessionStorage.signerror = Number(sessionStorage.signerror) + 1;
+            } else sessionStorage.signerror = 1;
+            if (sessionStorage.signerror >= 10)
+            {
+                clearStorage();
+            }
+            $("#info_mobile").show();
+            $("#info_mobile").html(data.msg);
+            //$.error(data.msg, 3000);
+        }
+        if (sessionStorage.signerror) sessionStorage.signerror = 0;
+        // 缓存用户信息
+        localStorage.removeItem('_user');
+        localStorage.setItem('s_u', document.forms['form_sign']['s_u'].value);
+        // 不自动登录的情况
+        if (data.body.expires == 0)
+        {
+            sessionStorage.setItem('_user', JSON.stringify(data.body.user));
+            // 自动登录永久保存
+        } else {
+            localStorage.setItem('_user', JSON.stringify(data.body.user));
+        }
+        // 转回到原画面,未指定画面时回主画面
+        var from = window.location.search, _f;
+        if (from && from.indexOf('?from=') === 0)
+        {
+            _f = from.substring(6);
+        }
+        if (!_f || _f.indexOf('login.html') >= 0) {
+            _f = 'index.shtml';
+        }
+        window.location.href = _f;
+    });
+});
+
 $("#forgetPass").bind("click",
 		function(){
 	$("#pLogin").hide();

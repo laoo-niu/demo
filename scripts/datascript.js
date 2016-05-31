@@ -62,52 +62,6 @@ $.restGet(request_url[hash], {'m': 'init', 'q': q}, function(data){
     }
 });
 
-// 登录
-$('#btn_Login').click(function(){
-    // TODO 空判断
-    var _form = document.forms['form_sign'];
-    $.signIn(request_url.sn, {
-        's_u': _form['s_u'].value,
-        's_p': _form['s_p'].value,
-        'autosignin': _form['autosignin'].checked
-    }, function(data) {
-        if (data.code != 0)
-        {
-            // 10次登录失败则清除本地缓存数据及cookie
-            if (sessionStorage.signerror)
-            {
-                sessionStorage.signerror = Number(sessionStorage.signerror) + 1;
-            } else sessionStorage.signerror = 1;
-            if (sessionStorage.signerror >= 10)
-            {
-                clearStorage();
-            }
-            $.error(data.msg, 3000);
-        }
-        if (sessionStorage.signerror) sessionStorage.signerror = 0;
-        // 缓存用户信息
-        localStorage.removeItem('_user');
-        localStorage.setItem('s_u', document.forms['form_sign']['s_u'].value);
-        // 不自动登录的情况
-        if (data.body.expires == 0)
-        {
-            sessionStorage.setItem('_user', JSON.stringify(data.body.user));
-            // 自动登录永久保存
-        } else {
-            localStorage.setItem('_user', JSON.stringify(data.body.user));
-        }
-        // 转回到原画面,未指定画面时回主画面
-        var from = window.location.search, _f;
-        if (from && from.indexOf('?from=') === 0)
-        {
-            _f = from.substring(6);
-        }
-        if (!_f || _f.indexOf('login.html') >= 0) {
-            _f = 'index.shtml';
-        }
-        window.location.href = _f;
-    });
-});
 
 // 退出登录
 function logoutfun(){
@@ -115,8 +69,14 @@ function logoutfun(){
 	// Clear local data
 	sessionStorage.clear();
 	clearCookie();
-	window.location.reload(); // 从缓存中装载文档
+	//window.location.reload(); // 从缓存中装载文档
 	//window.location.reload(true); // 绕过缓存从服务器上重新下载该文档
+	if(window.location.href.indexOf('me.shtml')!=-1) window.location.href="login.html";
+	localStorage.clear();
+	$('#me').hide();
+	$('#logout').hide();
+	$('#login').show();
+	$('#registermeber').show();
 };
 
 var getUser = function() {
@@ -175,3 +135,21 @@ var clearCookie = function(k) {
 		}
 	}
 };
+function checkMobile(str) {
+    if(str==""){
+    	$("#info_mobile").show();
+    	$("#info_mobile").html("手机号不能为空！");
+        return false;
+    }
+    else{
+        var re = /^1\d{10}$/
+        if (re.test(str)) {
+            //alert("正确");
+        	return true;
+        } else {
+        	$("#info_mobile").show();
+            $("#info_mobile").html("手机号格式错误！");
+            return false;
+        }
+    }
+}
