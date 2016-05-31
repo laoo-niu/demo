@@ -46,15 +46,13 @@ jQuery.extend({
     signOut: function( url, data, callback ) {
         // Sign out
     },
-    update:function(url,data,callback){
-    	 var u = data.s_u, p = md5(data.s_p);
-    	$.ajax({
-    		 url: url+"/"+u+"/"+p+"/",
-    		 type: "post",
-    		 processData: false,
-    		 success: callback   
-    		}); 
-    	 delete data['s_u'];
-         delete data['s_p'];
+    restPostUrl : function( url, data, success, error){
+		if (data) {
+            for (var a in data) {
+                url = url.replace('{' + a + '}', data[a]);
+                delete data[a];
+            }
+        }
+		jQuery.post( url, data, success, 'json').error(error);
     }
 });
