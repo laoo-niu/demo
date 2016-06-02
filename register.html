@@ -87,11 +87,11 @@ $("#btn_register").bind("click",
 	if (!checkMobile($("#txt_mobile").val())) return;
 		$("#info_mobile").hide();
 		$("#info_password").hide();
-	 var _form = document.forms['form_register'];
-	    $.update(request_url.u+"/registerUser", {
-	        's_u': _form['s_u'].value,
-	        's_p': _form['s_p'].value
-	    }, function(data) {
+	    var _form = document.forms['form_register'];
+	    $.restPostUrl(request_url.u+"/register/{s_u}/{s_p}", {
+		s_u : _form['s_u'].value,
+		s_p : md5(_form['s_p'].value)
+	}, function(data) {
 	        if (data.code != 0)
 	        {
 	        	if(data.code==901 || data.code==909 ) {$("#info_mobile").show();$("#info_mobile").html(data.msg);}
@@ -109,7 +109,9 @@ $("#btn_register").bind("click",
 	            _f = 'index.shtml';
 	        }
 	        window.location.href = _f;
-	    });
+	    }, function(error){
+			// TODO error
+		});
 	
 });
 </script>
