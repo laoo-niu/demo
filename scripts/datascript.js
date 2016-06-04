@@ -138,17 +138,37 @@ var clearCookie = function(k) {
 function checkMobile(str) {
     if(str==""){
     	$("#info_mobile").show();
-    	$("#info_mobile").html("手机号不能为空！");
+    	$("#info_mobile").html("请输入手机号！");
         return false;
     }
     else{
-        var re = /^1\d{10}$/
+        var re = /^1\d{10}$/;
         if (re.test(str)) {
             //alert("正确");
+        	$("#info_mobile").hide();
         	return true;
         } else {
         	$("#info_mobile").show();
-            $("#info_mobile").html("手机号格式错误！");
+            $("#info_mobile").html("请输入有效的手机号！");
+            return false;
+        }
+    }
+}
+function checkMail(str) {
+    if(str==""){
+    	$("#info_mobile").show();
+    	$("#info_mobile").html("请输入邮箱！");
+        return false;
+    }
+    else{
+        var re = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;        		
+        if (re.test(str)) {
+            //alert("正确");
+        	$("#info_mobile").hide();
+        	return true;
+        } else {
+        	$("#info_mobile").show();
+            $("#info_mobile").html("请输入有效的邮箱地址！");
             return false;
         }
     }
