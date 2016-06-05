@@ -17,7 +17,7 @@
 <div style="text-align:left;color:white;"><h3>活动</h3></div>
 
 <!-- BEGIN LEFT CONTENT -->
-<section id="bloglist-left" class="clearfix">
+<section id="bloglist-center" class="clearfix">
 
 	<div class="bloglist">
         <a href="n_activityDetail.html" title="Article 1">
@@ -27,38 +27,6 @@
         <span class="tile-cat red">活动1</span>
         </a>
     </div>
-    <div class="bloglist">
-        <a href="n_activityDetail.html" title="Article 2">
-        <div class="bl-posttitle"><span class="bl-title">活动2的标题</span></div>
-        <img class="bloglist-img" src="images/placeholder/list_blank.png" alt="Article 2" />
-        <span class="tile-date greentxt"><span class="date">06</span><span class="month">七月</span></span>
-        <span class="tile-cat lime">活动2</span>
-        </a>
-    </div>
-    <div class="bloglist">
-        <a href="n_activityDetail.html" title="Article 3">
-        <div class="bl-posttitle"><span class="bl-title">活动3的标题</span></div>
-        <img class="bloglist-img" src="images/placeholder/list_blank.png" alt="Article 3" />
-        <span class="tile-date tealtxt"><span class="date">01</span><span class="month">七月</span></span>
-        <span class="tile-cat teal">活动3</span>
-        </a>
-    </div>
-    <div class="bloglist">
-        <a href="n_activityDetail.html" title="Article 4">
-        <div class="bl-posttitle"><span class="bl-title">活动4的标题</span></div>
-        <img class="bloglist-img" src="images/placeholder/list_blank.png" alt="Article 4" />
-        <span class="tile-date bluetxt"><span class="date">30</span><span class="month">六月</span></span>
-        <span class="tile-cat blue">活动4</span>
-        </a>
-    </div>
-    <div class="bloglist">
-        <a href="n_activityDetail.html" title="Article 5">
-        <div class="bl-posttitle"><span class="bl-title">活动5的标题</span></div>
-        <img class="bloglist-img" src="images/placeholder/list_blank.png" alt="Article 5" />
-        <span class="tile-date browntxt"><span class="date">28</span><span class="month">六月</span></span>
-        <span class="tile-cat brown">活动5</span>
-        </a>
-    </div>   
     
     <!-- BEGIN PAGINATION -->
     <div class="pagination clearfix">
@@ -82,7 +50,7 @@
 </form>
 </div><!-- end #search -->
 
-<div id="recent-box" class="widget">
+<div id="recent-box" class="widget" style="display:none;">
 <h5>最新活动一览</h5>
 <ul class="articles-widget">
 <li>
@@ -108,7 +76,7 @@
 </li>
 </ul>
 </div><!-- end #recent-box -->
-<div class="widget text-widget">
+<div class="widget text-widget" style="display:none;">
 <h5>引言</h5>
 <p>活动说明概括<br/>
 1。。。。<br/>
@@ -127,5 +95,63 @@
 
 </section><!-- end #container -->
 </div>
+<script type="text/javascript">
+var activityInfos="";
+var myDate=new Date();
+var nubhanzi=new Object();
+nubhanzi[0]="一";nubhanzi[1]="二";nubhanzi[2]="三";nubhanzi[3]="四";nubhanzi[4]="五";
+function pageLink(pageIndex){
+	 $.restGet(request_url.a+"/search/"+pageIndex,null,function(data){
+	    	var pageSize=0;
+	    	var currentPage=pageIndex==0?1:pageIndex;
+	    	if(data && data.code == 0 && data.body.length>0){
+	    		activityInfos="";
+	    		var act=data.body;
+	    		pageSize=act[0].activitiesPageSize;
+	    		for(var i=0;i<act.length;i++){ 
+	    		  activityInfos=activityInfos+'<div class="bloglist">';
+	    		    activityInfos=activityInfos+'<a href="'+act[i].advertisementhref+'" title="第'+nubhanzi[i]+'季活动">';
+	    		    activityInfos=activityInfos+'<div class="bl-posttitle"><span class="bl-title">'+act[i].advertisementtitle+'</span></div>';
+	    		    activityInfos=activityInfos+'<img class="bloglist-img" src="'+act[i].advertisementpicaddr+'" alt="第'+nubhanzi[i]+'季活动" />';
+	    		    activityInfos=activityInfos+'<span class="tile-date redtxt"><span class="date">'+act[i].creationDate.substr(8,2)+'</span><span class="month">'+act[i].creationDate.substr(5,2)+'月</span></span>';
+	    		    activityInfos=activityInfos+'<span class="tile-cat red">第'+nubhanzi[i]+'季活动</span>';
+	    		    activityInfos=activityInfos+'</a></div>';
+	    		    delete act[i];
+	         	}	    		 
+	    	    activityInfos=activityInfos+'<div class="pagination clearfix">';
+	    	    activityInfos=activityInfos+'<span class="pages">第'+currentPage+'页</span>';
+	    	    
+	    	    for(var j=1;j<=pageSize;j++){
+	    	    	if(j==pageIndex){activityInfos=activityInfos+'<span class="current">'+j+'</span>';}
+	    	    	else{
+	    	    		activityInfos=activityInfos+'<a href="javascript:;" onclick="pageLink('+j+')" class="page">'+j+'</a>';
+	    	    	}
+	    	    }    	    	    
+	    	    activityInfos=activityInfos+'<a href="javascript:;" onclick="pageLink('+(parseInt(currentPage)+1)+')" class="nextpagelink">&raquo;</a>';
+	    	    activityInfos=activityInfos+'</div>';
+	    	    
+	    	    $("#bloglist-center").html(activityInfos);
+	    	    return true;
+	    	}
+	    	return false;
+	    });
+}
+
+    for(var i=0;i<=4;i++){
+	    activityInfos=activityInfos+'<div class="bloglist">';
+	    activityInfos=activityInfos+'<a href="n_activityDetail.html" title="第'+nubhanzi[i]+'季活动">';
+	    activityInfos=activityInfos+'<div class="bl-posttitle"><span class="bl-title">活动发布中。。。</span></div>';
+	    activityInfos=activityInfos+'<img class="bloglist-img" src="images/placeholder/list_blank.png" alt="第'+nubhanzi[i]+'季活动" />';
+	    activityInfos=activityInfos+'<span class="tile-date redtxt"><span class="date">'+myDate.getDate()+'</span><span class="month">'+myDate.getMonth()+'月</span></span>';
+	    activityInfos=activityInfos+'<span class="tile-cat red" >第'+nubhanzi[i]+'季活动</span>';
+	    activityInfos=activityInfos+'</a></div>';	   
+    }
+    
+    if(!pageLink(0)) {$("#bloglist-center").html(activityInfos);} 
+    
+    
+    
+    
+</script>
 </body>
 </html>

@@ -382,4 +382,9 @@ input.button_dtjym{float:left;font-size:20px;height:56px;line-height:45px;width:
 .duanxin{color:#999;margin:40px 0 0}
 .duanxin p{margin:0 0 8px}
 .tipbox .input_gray{margin:0 0 30px 10px;padding:0 46px;height:53px;line-height:53px;font-size:20px}
-
+#bloglist-center{
+	width:780px;
+	margin-left:5px;
+	position:relative;
+	padding-bottom:63px;
+}

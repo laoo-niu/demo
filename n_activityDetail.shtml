@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include file="head_include.html" -->
+</head>
+<body>
+<div id="bodypat">
+<section id="container">
+<!-- BEGIN HEADER -->
+<header class="clearfix">
+<!-- BEGIN HEADER -->
+<!--#include file="header.html" -->
+<!-- END HEADER -->
+</header>
+<!-- END HEADER -->
+
+<!-- BEGIN CONTENT -->
+<section id="content" class="clearfix">
+<!-- Title -->
+<div style="text-align:left;color:white;"><h3>活动详细</h3></div>
+<!-- BEGIN SINGLE CONTENT -->
+<section id="single">
+    <article id="article-1" class="sbp-article">
+    
+        <div class="article-img">
+           <div class="flexslider postslide">
+            <ul class="slides">
+            <li>
+            <img class="tile-pre-img" src="images/fruit/p5382612a922718186.jpg" alt="Article 1" />
+            </li>
+            <li>
+            <img class="tile-pre-img" src="images/fruit/48d0006a2b497ce6870.jpg" alt="Article 1" />
+            </li>
+            </ul>
+            </div>
+        </div>
+    
+    <div class="article-date redtxt"><span class="date">09</span><span class="month">July</span></div>
+    <h1 class="sbp-title">This is the title of Article 1</h1>
+    <span class="postcat redtxt">Illustration</span>
+    
+    <!-- BEGIN POST CONTENT -->
+    <div class="sbp-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Vestibulum id justo euismod tortor fermentum tristique. Phasellus justo felis, fermentum in eleifend vel, molestie vitae ligula.</p>
+
+    	<p>Duis fermentum, felis viverra venenatis laoreet, lectus ipsum egestas massa, at rutrum felis leo dictum orci. Nullam molestie erat sit amet libero sollicitudin rutrum. Cras luctus dignissim sapien, ac iaculis neque sodales vitae. Etiam at auctor velit. Mauris a ipsum non lectus venenatis adipiscing. Curabitur sodales vehicula porttitor. Vivamus vitae justo ut lacus posuere pretium eget non erat. Vivamus vulputate libero mi.</p>
+	</div><!-- end .sbp-content -->    
+    </article>
+    
+<!-- BEGIN COMMENTS -->
+<section id="comments">
+<h4>&nbsp;&nbsp;&nbsp;评论</h4>
+
+<ol class="commentlist">
+<!-- Comment 1 -->
+	<li class="comment">
+    <article id="comment-1">
+        <div class="comment-author"><img class="avatar" src="images/commenter.png" alt="Avatar"/>
+        	<a href="#"><span class="commenter">张三</span></a><a href="#commentform" class="comment-reply"><span class="button-met dark">Reply</span></a>
+            <span class="comment-date">10 July 2016</span>
+        </div>
+        <div class="comment-content">
+            <p>Duis fermentum, felis viverra venenatis laoreet, lectus ipsum egestas massa, at rutrum felis leo dictum orci. Nullam molestie erat sit amet libero sollicitudin rutrum. Cras luctus dignissim sapien, ac iaculis neque sodales vitae.</p>
+        </div>
+    </article>
+    </li>
+</ol>
+
+<div id="respond">
+<h5>留言</h5>
+<form id="commentform" method="post" action="?">
+    <div id="commentformleft">     
+    </div><div id="commentformright">
+        <p class="comment-form-comment">
+        <textarea id="comment" placeholder="Your commment" name="comment"></textarea>
+        </p>
+        <span class="button-met dark"><input id="comsubmit" type="submit" name="comsubmit" value="Post Comment" /></span>
+    </div>
+</form>
+</div><!-- end #respond -->
+
+</section><!-- end #comments -->
+<!-- END COMMENTS -->
+</section>
+<!-- end #single -->
+<!-- END SINGLE CONTENT -->
+
+<!-- BEGIN SIDEBAR -->
+<section id="sidebar">
+
+<div id="post-meta" class="widget">
+
+<div class="tile-sidebar">
+    <div class="meta1">
+    <img src="images/sidebar-comm.png" alt="Comments" />
+    <div class="count">4</div>
+    <div class="comment-widget">
+    <a href="#comments"><div class="comment-count">4</div></a>
+    <a href="#respond"><div class="comment-quick-reply">Reply</div></a>
+    </div>
+    </div><!-- end .meta1 -->
+</div><!-- end .tile-sidebar -->
+
+<div class="tile-sidebar" style="background:#3b5998">
+    <div class="meta2">
+    <img src="images/sidebar-fb.png" alt="Facebook" />
+    <div class="count"></div>
+    <div id="fb-root"></div>
+    <div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-colorscheme="dark" data-font="segoe ui"></div>
+    </div><!-- end .meta2 -->
+</div><!-- end .tile-sidebar -->
+
+<div class="tile-sidebar" style="background:#3cf">
+    <div class="meta3">
+    <img src="images/sidebar-twtr.png" alt="Twitter" />
+    <div class="count"></div>
+    <a href="#" class="twitter-share-button" data-count="vertical">Tweet</a>
+    </div><!-- end .meta3 -->
+</div><!-- end .tile-sidebar -->
+
+</div><!-- end post-meta -->
+
+<div id="recent-box" class="widget" style="display:none;">
+<h5>最新活动一览</h5>
+<ul class="articles-widget">
+<li>
+	<a href="n_activityDetail.html">
+	<img src="images/placeholder/medium_blank.png" alt="Article 1" />
+    <div class="title">最新活动1介绍<br><span class="redtxt">最新活动1</span></div>
+    <div class="more"></div>
+    </a>
+</li>
+<li>
+	<a href="n_activityDetail.html">
+	<img src="images/placeholder/medium_blank.png" alt="Article 2" />
+    <div class="title">最新活动2介绍<br><span class="limetxt">最新活动2</span></div>
+    <div class="more"></div>
+    </a>
+</li>
+<li>
+	<a href="n_activityDetail.html">
+	<img src="images/placeholder/medium_blank.png" alt="Article 3" />
+    <div class="title">最新活动3介绍<br><span class="tealtxt">最新活动3</span></div>
+    <div class="more"></div>
+    </a>
+</li>
+</ul>
+</div><!-- end #recent-box -->
+<div class="widget text-widget" style="display:none;">
+<h5>引言</h5>
+<p>活动说明概括<br/>
+1。。。。<br/>
+2。。。。<br/>
+3。。。。<br/></p></div><!-- end .text-widget -->
+
+</section>
+<!-- END SIDEBAR -->
+</section>
+<!-- END CONTENT -->
+
+<!-- BEGIN FOOTER -->
+<!--#include file="footer.html" -->
+<!-- END FOOTER -->
+
+</section><!-- end #container -->
+</div>
+</body>
+</html>

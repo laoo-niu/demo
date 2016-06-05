@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>乡村一览</title>
+<title>美食美景</title>
 <!--#include file="head_include.html" -->
 </head>
 <body>
@@ -15,14 +15,14 @@
 <!-- BEGIN CONTENT -->
 <section id="content" class="clearfix">
 <!-- Title -->
-<!-- <div id="content-title">乡村一览</div> -->
-<div style="text-align:left;color:white;"><h3>乡村一览</h3></div>
+<!-- <div id="content-title">美食美景</div> -->
+<div style="text-align:left;color:white;"><h3>美食美景</h3></div>
 <!-- BEGIN LEFT CONTENT -->
 <section id="portfoliolist-left" class="clearfix">
 <!-- BEGIN FILTER -->
 <!-- <div id="filter" class="clearfix"> -->
 <!-- <ul id="port-filter"> -->
-<!-- 	<li class="filter-current"><a href="#">乡村介绍一览</a></li> -->
+<!-- 	<li class="filter-current"><a href="#">美食美景一览</a></li> -->
 <!--     <li><a href="#">Illustration</a></li> -->
 <!--     <li><a href="#">Graphic Design</a></li> -->
 <!-- </ul> -->

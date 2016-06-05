@@ -6,7 +6,7 @@ var api_url = 'http://localhost/wfp'
         's' : api_url + '/staplefood/{m}/{q}', // 主食
         'v' : api_url + '/vegetables/{m}{q}', // 蔬菜
         'f' : api_url + '/fruit/{m}/{q}', // 水果
-        'a' : api_url + '/activity/{m}/{q}', // 活动
+        'a' : api_url + '/activity', // 活动
         'sn' : api_url + '/token/{autosignin}/{cert}', // 登录
         'u' : api_url + '/user' // 用户相关接口
     };
@@ -23,13 +23,17 @@ if (hash && hash.length > 1)
 var commentItem = '<li class="comment"><article id="comment-1"><div class="comment-author"><img class="avatar" src="{avatar}" alt="头像"/><span class="commenter">{commenter}</span><span class="comment-date">{date}</span></div><div class="comment-content"><p>{content}</p></div></article></li>';
 
 // 获取画面初始数据
-if (q&&hash)
+if (q&&hash )
 $.restGet(request_url[hash], {'m': 'init', 'q': q}, function(data){
     console.log(data);
     if (data.code != 0)
     {
         $.error(data.msg, 5000);
     }
+    //活动详细
+ // 统计信息
+    var activity = data.body.activity;
+    
     // 统计信息
     var statistics = data.body.statistics;
     if (statistics)
