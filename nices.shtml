@@ -82,7 +82,7 @@
 </form>
 </div><!-- end #search -->
 
-<!--#include file="recent-activity.html" -->
+<!--#include file="recent.html" -->
 
 
 
