@@ -387,7 +387,8 @@ $(document).ready(function(){
         else window.location.href = 'login.html?from=me.shtml';
     });
 
-	var user = getUser();
+	// 使用前先引用datascript.js
+	/*var user = getUser();
 	if (user)
 	{
 		$('#me').show();
@@ -396,7 +397,7 @@ $(document).ready(function(){
 		$('#registermeber').hide();
 		
 		// TODO 显示名字和头像
-	}
+	}*/
 });
 
 function checkMobile(str) {

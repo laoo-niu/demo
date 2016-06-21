@@ -39,9 +39,9 @@
             </div>
         </div>
     
-    <div class="article-date redtxt"><span class="date">20</span><span class="month">September</span></div>
+    <div class="article-date redtxt"><span class="date">20</span><span class="month">九月</span></div>
     <h1 class="sbp-title">旅游好去处</h1>
-    <span class="postcat redtxt">旅游</span>
+    <span class="postcat redtxt">旅游</span><span class="postcat redtxt">同里</span><span class="postcat redtxt">水乡</span>
     <!-- BEGIN POST CONTENT -->
     <div class="sbp-content">
         <p>同里景区位于太湖之滨，大运河畔，东南接318国道，西接205省道，距虹桥机场80公里。西连苏嘉205省道，离苏州18公里，吴江6公里，水陆交通便捷，地理位置优越，素有“苏凇要途”之称。同里景区为庞山湖、九里湖、同里湖、南星湖、叶泽湖所环抱，可谓“诸湖环抱于外，一镇包涵中”。在这里可以饱览江南典型的“小桥、流水、人家”的水乡景观，领略古镇的神韵。</p>
@@ -122,7 +122,7 @@
 </div><!-- end post-meta -->
 
 
-<!--#include file="recent-rural.html" -->
+<!--#include file="1466498009407_0819.html" -->
 
 
 </section>
